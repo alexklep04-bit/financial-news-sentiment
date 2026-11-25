@@ -1,0 +1,123 @@
+W1123 17:39:51.186000 89390 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+device: mps
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9255.05it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  bert seed 1 epoch 1: loss 0.7904  val F1 0.7986  (97s)
+  bert seed 1 epoch 2: loss 0.3291  val F1 0.8237  (100s)
+  bert seed 1 epoch 3: loss 0.1688  val F1 0.8420  (98s)
+  bert seed 1 epoch 4: loss 0.0982  val F1 0.8470  (107s)
+   bert                   pb_test    seed=1  acc=0.8378  macroF1=0.8302
+   bert                   twitter    seed=1  acc=0.6873  macroF1=0.5972
+   bert                   firm_heads seed=1  acc=0.7966  macroF1=0.2956
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8534.16it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  bert seed 2 epoch 1: loss 0.7069  val F1 0.8135  (106s)
+  bert seed 2 epoch 2: loss 0.3224  val F1 0.8414  (100s)
+  bert seed 2 epoch 3: loss 0.1675  val F1 0.8477  (111s)
+  bert seed 2 epoch 4: loss 0.0887  val F1 0.8448  (107s)
+   bert                   pb_test    seed=2  acc=0.8502  macroF1=0.8384
+   bert                   twitter    seed=2  acc=0.6973  macroF1=0.5935
+   bert                   firm_heads seed=2  acc=0.8020  macroF1=0.2967
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6747.62it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  bert seed 3 epoch 1: loss 0.6833  val F1 0.8061  (130s)
+  bert seed 3 epoch 2: loss 0.2985  val F1 0.8391  (627s)
+  bert seed 3 epoch 3: loss 0.1445  val F1 0.8365  (162s)
+  bert seed 3 epoch 4: loss 0.0829  val F1 0.8467  (107s)
+   bert                   pb_test    seed=3  acc=0.8399  macroF1=0.8329
+   bert                   twitter    seed=3  acc=0.6849  macroF1=0.5955
+   bert                   firm_heads seed=3  acc=0.7837  macroF1=0.2929
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 8560.68it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  bert seed 4 epoch 1: loss 0.6935  val F1 0.8331  (114s)
+  bert seed 4 epoch 2: loss 0.3153  val F1 0.8536  (110s)
+  bert seed 4 epoch 3: loss 0.1728  val F1 0.8429  (106s)
+  bert seed 4 epoch 4: loss 0.0887  val F1 0.8424  (101s)
+   bert                   pb_test    seed=4  acc=0.8419  macroF1=0.8343
+   bert                   twitter    seed=4  acc=0.7076  macroF1=0.6151
+   bert                   firm_heads seed=4  acc=0.7933  macroF1=0.2949
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9088.76it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  bert seed 5 epoch 1: loss 0.6958  val F1 0.8183  (103s)
+  bert seed 5 epoch 2: loss 0.3139  val F1 0.8397  (101s)
+  bert seed 5 epoch 3: loss 0.1666  val F1 0.8387  (107s)
+  bert seed 5 epoch 4: loss 0.0841  val F1 0.8446  (104s)
+   bert                   pb_test    seed=5  acc=0.8461  macroF1=0.8369
+   bert                   twitter    seed=5  acc=0.6889  macroF1=0.6066
+   bert                   firm_heads seed=5  acc=0.7660  macroF1=0.2892

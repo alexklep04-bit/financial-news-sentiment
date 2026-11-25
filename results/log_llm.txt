@@ -1,0 +1,185 @@
+W1123 17:59:22.586000 91400 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<04:48,  1.00it/s]Loading weights:  73%|███████▎  | 211/290 [00:01<00:00, 263.45it/s]Loading weights: 100%|██████████| 290/290 [00:01<00:00, 228.17it/s]
+  qwen2.5-0.5b_zeroshot seed 0 pb_test: 968 texts in 368s, avg prob. mass on label words = 0.996
+   qwen2.5-0.5b_zeroshot  pb_test    seed=0  acc=0.5992  macroF1=0.2656
+=== start Mon Nov 23 18:33:10 EET 2026
+W1123 18:33:14.088000 93982 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<02:15,  2.13it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 614.06it/s]
+/opt/anaconda3/lib/python3.13/multiprocessing/resource_tracker.py:324: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/loky-93982-jsy9mbs6'}
+  warnings.warn(
+=== start Mon Nov 23 18:34:04 EET 2026
+W1123 18:34:07.958000 94063 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 5719.23it/s]
+  qwen2.5-0.5b_zeroshot seed 0 pb_test: 968 texts in 66s, avg prob. mass on label words = 0.996
+   qwen2.5-0.5b_zeroshot  pb_test    seed=0  acc=0.5992  macroF1=0.2656
+  qwen2.5-0.5b_zeroshot seed 0 twitter: 2439 texts in 177s, avg prob. mass on label words = 0.996
+   qwen2.5-0.5b_zeroshot  twitter    seed=0  acc=0.6515  macroF1=0.2853
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+W1123 18:38:19.027000 94393 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<06:27,  1.15s/it]Loading weights:  75%|███████▌  | 255/338 [00:01<00:00, 275.25it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 203.69it/s]
+/opt/anaconda3/lib/python3.13/multiprocessing/resource_tracker.py:324: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/loky-94393-nbo1l4g2'}
+  warnings.warn(
+=== new queue Tue Nov 24 10:27:17 EET 2026
+=== start 10:27:17: Qwen/Qwen2.5-1.5B-Instruct zero
+W1124 10:27:21.528000 13384 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:02,  1.39it/s]Loading weights:  58%|█████▊    | 195/338 [00:00<00:00, 318.15it/s]Loading weights:  89%|████████▉ | 301/338 [00:01<00:00, 323.36it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 267.65it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_zeroshot seed 0 pb_test: 968 texts in 100s, avg prob. mass on label words = 0.999
+   qwen2.5-1.5b_zeroshot  pb_test    seed=0  acc=0.6023  macroF1=0.6342
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_zeroshot seed 0 twitter: 2439 texts in 141s, avg prob. mass on label words = 0.997
+   qwen2.5-1.5b_zeroshot  twitter    seed=0  acc=0.4752  macroF1=0.4898
+=== done  10:31:25: Qwen/Qwen2.5-1.5B-Instruct zero (exit 0)
+=== start 10:32:40: Qwen/Qwen2.5-1.5B-Instruct target
+W1124 10:32:44.607000 13667 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:00,  1.40it/s]Loading weights:  58%|█████▊    | 196/338 [00:00<00:00, 322.00it/s]Loading weights:  89%|████████▉ | 302/338 [00:01<00:00, 325.99it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 270.29it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+          pred_qwen2.5-1.5b_generic  pred_qwen2.5-1.5b_target
+negative                         41                        31
+neutral                          26                        60
+positive                        104                        80
+=== done  10:32:59: Qwen/Qwen2.5-1.5B-Instruct target (exit 0)
+=== start 10:34:14: Qwen/Qwen2.5-3B-Instruct zero
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+W1124 10:34:19.303000 13746 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<05:35,  1.29it/s]Loading weights:  34%|███▍      | 147/434 [00:00<00:01, 216.12it/s]Loading weights:  49%|████▊     | 211/434 [00:01<00:01, 194.71it/s]Loading weights:  59%|█████▊    | 254/434 [00:01<00:00, 197.88it/s]Loading weights:  66%|██████▋   | 288/434 [00:02<00:01, 103.91it/s]Loading weights:  72%|███████▏  | 311/434 [00:02<00:01, 102.79it/s]Loading weights:  76%|███████▌  | 330/434 [00:02<00:01, 102.73it/s]Loading weights:  80%|███████▉  | 346/434 [00:02<00:00, 109.13it/s]Loading weights:  83%|████████▎ | 362/434 [00:02<00:00, 113.08it/s]Loading weights:  87%|████████▋ | 377/434 [00:03<00:00, 104.35it/s]Loading weights:  90%|████████▉ | 390/434 [00:03<00:00, 107.42it/s]Loading weights:  93%|█████████▎| 403/434 [00:03<00:00, 103.18it/s]Loading weights:  96%|█████████▌| 415/434 [00:03<00:00, 99.57it/s] Loading weights:  98%|█████████▊| 426/434 [00:03<00:00, 76.40it/s]Loading weights: 100%|██████████| 434/434 [00:03<00:00, 113.91it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-3b_zeroshot seed 0 pb_test: 968 texts in 167s, avg prob. mass on label words = 1.000
+   qwen2.5-3b_zeroshot    pb_test    seed=0  acc=0.7211  macroF1=0.7387
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-3b_zeroshot seed 0 twitter: 2439 texts in 320s, avg prob. mass on label words = 1.000
+   qwen2.5-3b_zeroshot    twitter    seed=0  acc=0.5642  macroF1=0.5745
+=== done  10:42:34: Qwen/Qwen2.5-3B-Instruct zero (exit 0)
+=== start 10:43:49: Qwen/Qwen2.5-3B-Instruct target
+W1124 10:43:53.676000 14193 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<05:59,  1.21it/s]Loading weights:  37%|███▋      | 159/434 [00:00<00:01, 229.86it/s]Loading weights:  56%|█████▌    | 244/434 [00:01<00:00, 221.25it/s]Loading weights:  69%|██████▉   | 300/434 [00:01<00:00, 231.09it/s]Loading weights:  79%|███████▉  | 344/434 [00:02<00:00, 110.37it/s]Loading weights:  86%|████████▌ | 374/434 [00:02<00:00, 111.36it/s]Loading weights:  92%|█████████▏| 398/434 [00:03<00:00, 115.80it/s]Loading weights:  97%|█████████▋| 419/434 [00:03<00:00, 112.75it/s]Loading weights: 100%|██████████| 434/434 [00:03<00:00, 131.76it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+          pred_qwen2.5-3b_generic  pred_qwen2.5-3b_target
+negative                       38                      43
+neutral                        33                      44
+positive                      100                      84
+=== done  10:44:25: Qwen/Qwen2.5-3B-Instruct target (exit 0)
+=== start 10:45:40: Qwen/Qwen2.5-1.5B-Instruct few 1
+W1124 10:45:44.528000 14294 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:11,  1.34it/s]Loading weights:  58%|█████▊    | 196/338 [00:00<00:00, 309.69it/s]Loading weights:  89%|████████▉ | 302/338 [00:01<00:00, 322.07it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 263.61it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_fewshot seed 1 pb_test: 968 texts in 77s, avg prob. mass on label words = 0.999
+   qwen2.5-1.5b_fewshot   pb_test    seed=1  acc=0.8130  macroF1=0.8003
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_fewshot seed 1 twitter: 2439 texts in 234s, avg prob. mass on label words = 0.999
+   qwen2.5-1.5b_fewshot   twitter    seed=1  acc=0.7589  macroF1=0.7332
+=== done  10:50:58: Qwen/Qwen2.5-1.5B-Instruct few 1 (exit 0)
+=== start 10:52:13: Qwen/Qwen2.5-1.5B-Instruct few 2
+W1124 10:52:17.829000 14604 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:11,  1.34it/s]Loading weights:  54%|█████▍    | 184/338 [00:00<00:00, 293.54it/s]Loading weights:  86%|████████▌ | 289/338 [00:01<00:00, 313.34it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 259.31it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_fewshot seed 2 pb_test: 968 texts in 98s, avg prob. mass on label words = 0.999
+   qwen2.5-1.5b_fewshot   pb_test    seed=2  acc=0.8254  macroF1=0.8117
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_fewshot seed 2 twitter: 2439 texts in 216s, avg prob. mass on label words = 0.999
+   qwen2.5-1.5b_fewshot   twitter    seed=2  acc=0.7712  macroF1=0.7428
+=== done  10:57:34: Qwen/Qwen2.5-1.5B-Instruct few 2 (exit 0)
+=== start 10:58:49: Qwen/Qwen2.5-1.5B-Instruct few 3
+W1124 10:58:55.424000 14906 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:38,  1.21it/s]Loading weights:  54%|█████▍    | 184/338 [00:00<00:00, 270.61it/s]Loading weights:  86%|████████▌ | 291/338 [00:01<00:00, 289.51it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 249.00it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_fewshot seed 3 pb_test: 968 texts in 127s, avg prob. mass on label words = 0.999
+   qwen2.5-1.5b_fewshot   pb_test    seed=3  acc=0.8079  macroF1=0.7997
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_fewshot seed 3 twitter: 2439 texts in 199s, avg prob. mass on label words = 0.999
+   qwen2.5-1.5b_fewshot   twitter    seed=3  acc=0.7200  macroF1=0.7058
+=== done  11:04:24: Qwen/Qwen2.5-1.5B-Instruct few 3 (exit 0)
+=== start 11:05:39: Qwen/Qwen2.5-1.5B-Instruct few 4
+W1124 11:05:44.402000 15230 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:13,  1.33it/s]Loading weights:  54%|█████▍    | 184/338 [00:00<00:00, 289.24it/s]Loading weights:  84%|████████▍ | 284/338 [00:01<00:00, 301.25it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 254.55it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_fewshot seed 4 pb_test: 968 texts in 136s, avg prob. mass on label words = 0.999
+   qwen2.5-1.5b_fewshot   pb_test    seed=4  acc=0.8140  macroF1=0.8010
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_fewshot seed 4 twitter: 2439 texts in 204s, avg prob. mass on label words = 0.998
+   qwen2.5-1.5b_fewshot   twitter    seed=4  acc=0.7585  macroF1=0.7303
+=== done  11:11:27: Qwen/Qwen2.5-1.5B-Instruct few 4 (exit 0)
+=== start 11:12:42: Qwen/Qwen2.5-1.5B-Instruct few 5
+W1124 11:12:50.184000 15583 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:29,  1.25it/s]Loading weights:  54%|█████▍    | 184/338 [00:00<00:00, 276.74it/s]Loading weights:  86%|████████▌ | 289/338 [00:01<00:00, 290.98it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 241.46it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_fewshot seed 5 pb_test: 968 texts in 138s, avg prob. mass on label words = 0.999
+   qwen2.5-1.5b_fewshot   pb_test    seed=5  acc=0.8079  macroF1=0.7947
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-1.5b_fewshot seed 5 twitter: 2439 texts in 207s, avg prob. mass on label words = 0.999
+   qwen2.5-1.5b_fewshot   twitter    seed=5  acc=0.7245  macroF1=0.7089
+=== done  11:18:38: Qwen/Qwen2.5-1.5B-Instruct few 5 (exit 0)
+=== start 11:19:53: Qwen/Qwen2.5-3B-Instruct few 1 --pb-only
+W1124 11:19:57.801000 15997 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<06:37,  1.09it/s]Loading weights:  37%|███▋      | 159/434 [00:01<00:01, 210.74it/s]Loading weights:  56%|█████▌    | 244/434 [00:01<00:00, 208.05it/s]Loading weights:  69%|██████▉   | 300/434 [00:02<00:01, 121.42it/s]Loading weights:  77%|███████▋  | 336/434 [00:02<00:00, 118.54it/s]Loading weights:  84%|████████▎ | 363/434 [00:02<00:00, 114.19it/s]Loading weights:  89%|████████▊ | 385/434 [00:03<00:00, 120.28it/s]Loading weights:  93%|█████████▎| 405/434 [00:03<00:00, 110.48it/s]Loading weights:  97%|█████████▋| 421/434 [00:03<00:00, 116.50it/s]Loading weights: 100%|██████████| 434/434 [00:03<00:00, 123.06it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-3b_fewshot seed 1 pb_test: 968 texts in 287s, avg prob. mass on label words = 1.000
+   qwen2.5-3b_fewshot     pb_test    seed=1  acc=0.7397  macroF1=0.7498
+=== done  11:24:52: Qwen/Qwen2.5-3B-Instruct few 1 --pb-only (exit 0)
+=== start 11:26:07: Qwen/Qwen2.5-3B-Instruct few 2 --pb-only
+W1124 11:26:11.275000 16333 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:01<07:29,  1.04s/it]Loading weights:  37%|███▋      | 159/434 [00:01<00:01, 188.88it/s]Loading weights:  56%|█████▌    | 241/434 [00:01<00:00, 194.83it/s]Loading weights:  68%|██████▊   | 295/434 [00:01<00:00, 176.06it/s]Loading weights:  77%|███████▋  | 334/434 [00:02<00:01, 99.62it/s] Loading weights:  83%|████████▎ | 360/434 [00:03<00:00, 99.88it/s]Loading weights:  88%|████████▊ | 381/434 [00:03<00:00, 100.93it/s]Loading weights:  92%|█████████▏| 399/434 [00:03<00:00, 102.90it/s]Loading weights:  96%|█████████▌| 415/434 [00:03<00:00, 103.72it/s]Loading weights: 100%|██████████| 434/434 [00:03<00:00, 116.52it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-3b_fewshot seed 2 pb_test: 968 texts in 305s, avg prob. mass on label words = 1.000
+   qwen2.5-3b_fewshot     pb_test    seed=2  acc=0.7262  macroF1=0.7328
+=== done  11:31:24: Qwen/Qwen2.5-3B-Instruct few 2 --pb-only (exit 0)
+=== start 11:32:39: Qwen/Qwen2.5-3B-Instruct few 3 --pb-only
+W1124 11:32:44.473000 17010 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<07:02,  1.02it/s]Loading weights:  37%|███▋      | 159/434 [00:01<00:01, 202.26it/s]Loading weights:  58%|█████▊    | 251/434 [00:01<00:00, 201.16it/s]Loading weights:  71%|███████▏  | 310/434 [00:01<00:00, 196.04it/s]Loading weights:  81%|████████▏ | 353/434 [00:02<00:00, 101.00it/s]Loading weights:  88%|████████▊ | 382/434 [00:03<00:00, 105.46it/s]Loading weights:  94%|█████████▎| 406/434 [00:03<00:00, 105.57it/s]Loading weights:  98%|█████████▊| 426/434 [00:03<00:00, 109.43it/s]Loading weights: 100%|██████████| 434/434 [00:03<00:00, 121.98it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-3b_fewshot seed 3 pb_test: 968 texts in 286s, avg prob. mass on label words = 1.000
+   qwen2.5-3b_fewshot     pb_test    seed=3  acc=0.6849  macroF1=0.7010
+=== done  11:37:37: Qwen/Qwen2.5-3B-Instruct few 3 --pb-only (exit 0)
+=== start 11:38:52: Qwen/Qwen2.5-3B-Instruct few 4 --pb-only
+W1124 11:38:57.323000 17307 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<06:59,  1.03it/s]Loading weights:  34%|███▍      | 147/434 [00:01<00:01, 188.34it/s]Loading weights:  54%|█████▎    | 233/434 [00:01<00:01, 189.70it/s]Loading weights:  67%|██████▋   | 289/434 [00:01<00:00, 199.02it/s]Loading weights:  76%|███████▋  | 332/434 [00:02<00:00, 189.65it/s]Loading weights:  84%|████████▍ | 365/434 [00:03<00:00, 91.05it/s] Loading weights:  89%|████████▉ | 388/434 [00:03<00:00, 94.23it/s]Loading weights:  94%|█████████▍| 408/434 [00:03<00:00, 102.09it/s]Loading weights:  98%|█████████▊| 427/434 [00:03<00:00, 102.55it/s]Loading weights: 100%|██████████| 434/434 [00:03<00:00, 120.75it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-3b_fewshot seed 4 pb_test: 968 texts in 290s, avg prob. mass on label words = 1.000
+   qwen2.5-3b_fewshot     pb_test    seed=4  acc=0.6426  macroF1=0.6609
+=== done  11:43:55: Qwen/Qwen2.5-3B-Instruct few 4 --pb-only (exit 0)
+=== start 11:45:10: Qwen/Qwen2.5-3B-Instruct few 5 --pb-only
+W1124 11:45:14.733000 17701 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:01<07:50,  1.09s/it]Loading weights:  34%|███▍      | 149/434 [00:01<00:01, 172.35it/s]Loading weights:  54%|█████▍    | 235/434 [00:01<00:01, 182.55it/s]Loading weights:  67%|██████▋   | 291/434 [00:01<00:00, 181.17it/s]Loading weights:  76%|███████▋  | 332/434 [00:02<00:00, 184.05it/s]Loading weights:  84%|████████▍ | 365/434 [00:03<00:00, 86.40it/s] Loading weights:  89%|████████▉ | 388/434 [00:03<00:00, 90.06it/s]Loading weights:  94%|█████████▍| 407/434 [00:03<00:00, 97.87it/s]Loading weights:  98%|█████████▊| 426/434 [00:03<00:00, 100.58it/s]Loading weights: 100%|██████████| 434/434 [00:03<00:00, 115.29it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+/Users/klep/Documents/my uni/4th 7/language technologies/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+  qwen2.5-3b_fewshot seed 5 pb_test: 968 texts in 291s, avg prob. mass on label words = 1.000
+   qwen2.5-3b_fewshot     pb_test    seed=5  acc=0.6498  macroF1=0.6717
+=== done  11:50:14: Qwen/Qwen2.5-3B-Instruct few 5 --pb-only (exit 0)

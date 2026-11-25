@@ -1,0 +1,48 @@
+=== predicted sentiment of all filtered headlines per firm ===
+pred           negative  neutral  positive     n    net
+firm                                                   
+JPMorgan          0.127    0.708     0.164  1320  0.037
+Goldman Sachs     0.153    0.675     0.172  1108  0.020
+BlackRock         0.113    0.667     0.220   768  0.107
+Vanguard          0.063    0.794     0.143   126  0.079
+Citadel           0.000    0.909     0.091    11  0.091
+
+=== net sentiment per year (share pos - share neg), firms with enough news ===
+             n                              net                       
+firm BlackRock Goldman Sachs JPMorgan BlackRock Goldman Sachs JPMorgan
+year                                                                  
+2010        12            28       18      0.08         -0.21     0.00
+2011        18            68       35      0.28          0.12     0.00
+2012        47            55       93      0.00         -0.02     0.01
+2013        46            43       50      0.15         -0.05    -0.10
+2014        31            48       57      0.19          0.06    -0.05
+2015       110           172      169      0.15          0.03     0.03
+2016        83           149      108     -0.07          0.07     0.00
+2017        49           104       77      0.18         -0.03     0.13
+2018       141           196      214      0.16         -0.03     0.05
+2019       192           207      407      0.08          0.05     0.07
+2020        39            38       92      0.15          0.05     0.02
+
+JPMorgan: most negative -> ['Weak Investment Banking to Hurt JPMorgan (JPM) Q1 Earnings', "Weak Investment Banking to Hurt JPMorgan's (JPM) Q1 Earnings", "Lower Trading Volumes to Hurt JPMorgan's (JPM) Q1 Earnings"]
+JPMorgan: most positive -> ['JPMorgan Affirms Profitability Goals, Expects Costs to Rise', 'JPMorgan (JPM) Beats on Q1 Earnings, Revenues Increase Y/Y', 'JPMorgan gains 1.4% after Q3 beat on strong consumer banking growth']
+
+Goldman Sachs: most negative -> ["Soft Trading Activities to Hurt Goldman's (GS) Q2 Earnings", "Global Crisis: Goldman Sachs Says That Brazil Has Plunged Into 'An Outright Depression'", "Muted Trading Revenues to Hurt Goldman's (GS) Q4 Earnings?"]
+Goldman Sachs: most positive -> ['VMware +2% as Goldman sees slight upside', 'Sibanye-Stillwater +11% as Goldman sees continued gains', 'Goldman boosts its Tableau target to 18% upside']
+
+BlackRock: most negative -> ['BlackRock (BLK) Q1 Earnings Miss as AUM Declines, Costs Rise', 'BlackRock EPS misses by $0.18, misses on revenue', 'Earnings Preview: BlackRock (BLK) Q1 Earnings Expected to Decline']
+BlackRock: most positive -> ['BlackRock (BLK) Q4 Earnings Beat Estimates as Revenues Rise', "BlackRock's 2Q Profits Rise 32%, Exceed Estimates", "BlackRock's (BLK) Q3 Earnings Beat Estimates as Revenues Rise"]
+
+=== manual sample: 171 headlines ===
+share of headlines that are really about the firm: {'JPMorgan': 0.52, 'Goldman Sachs': 0.3, 'BlackRock': 0.68, 'Vanguard': 0.2, 'Citadel': 0.36} overall 0.421
+gold sentence-level label distribution: {'positive': 75, 'neutral': 68, 'negative': 28}
+label differs between sentence and firm level in 59 headlines
+  pred_finbert           vs sent_sentence : acc 0.655  macro-F1 0.611
+  pred_finbert           vs sent_firm     : acc 0.678  macro-F1 0.498
+  pred_qwen2.5-1.5b_generic vs sent_sentence : acc 0.690  macro-F1 0.671
+  pred_qwen2.5-1.5b_generic vs sent_firm     : acc 0.380  macro-F1 0.394
+  pred_qwen2.5-1.5b_target vs sent_sentence : acc 0.743  macro-F1 0.738
+  pred_qwen2.5-1.5b_target vs sent_firm     : acc 0.520  macro-F1 0.479
+  pred_qwen2.5-3b_generic vs sent_sentence : acc 0.749  macro-F1 0.738
+  pred_qwen2.5-3b_generic vs sent_firm     : acc 0.439  macro-F1 0.446
+  pred_qwen2.5-3b_target vs sent_sentence : acc 0.673  macro-F1 0.674
+  pred_qwen2.5-3b_target vs sent_firm     : acc 0.503  macro-F1 0.495

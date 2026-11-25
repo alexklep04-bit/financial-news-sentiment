@@ -1,0 +1,172 @@
+date,firm,headline,publisher,stock,about_firm,sent_sentence,sent_firm,pred_finbert,score,pred_qwen2.5-1.5b_generic,pred_qwen2.5-1.5b_target,pred_qwen2.5-3b_generic,pred_qwen2.5-3b_target
+2018-10-08,JPMorgan,"JPMorgan to Trim Mortgage Banking Division, Slash 400 Jobs",Zacks,JPM,1,negative,negative,neutral,-0.3623664689,negative,negative,negative,negative
+2020-01-13,JPMorgan,"The Zacks Analyst Blog Highlights: JPMorgan Chase, Johnson & Johnson, American Express Company, NIKE and Apple",Zacks,AXP,0,neutral,neutral,neutral,0.00533592074,neutral,neutral,positive,neutral
+2015-10-16,JPMorgan,"Bank Stock Roundup: All About Q3 Earnings; JPMorgan, BofA, Citigroup in Focus",Zacks,COF,0,neutral,neutral,neutral,0.0005006780600000007,positive,neutral,positive,neutral
+2014-10-06,JPMorgan,JPMorgan Data Breach Affects 76M Households; Probe On - Analyst Blog,Zacks,MIK,1,negative,negative,neutral,-0.07086726476399999,negative,negative,negative,negative
+2018-10-12,JPMorgan,JPMorgan Chase & Co. (JPM) CEO Jamie Dimon on Q3 2018 Results - Earnings Call Transcript,Seeking Alpha,JPM,1,neutral,neutral,neutral,0.003017898305999999,positive,positive,neutral,neutral
+2019-10-07,JPMorgan,"Citigroup, JPMorgan, Wells Fargo and Micron are part of Zacks Earnings Preview",Zacks,JPM,0,neutral,neutral,neutral,0.004073598497999999,neutral,neutral,neutral,neutral
+2018-01-08,JPMorgan,Sell the nattie among JPMorgan's 2018 energy calls,Seeking Alpha,DGAZ,0,negative,neutral,neutral,0.007769686720000002,negative,negative,negative,negative
+2011-11-14,JPMorgan,"The Zacks Analyst Blog Highlights: Morgan Stanley, The Goldman Sachs Group, Ocwen Financial, JPMorgan Chase & Co. and Bank of America - Press Releases",Zacks,OCN,0,neutral,neutral,neutral,0.004475237120000001,neutral,neutral,neutral,neutral
+2020-01-13,JPMorgan,"JPMorgan, Bank of America, Citigroup and Wells Fargo are part of Zacks Earnings Preview",Zacks,JPM,0,neutral,neutral,neutral,0.002943397980000001,neutral,neutral,neutral,neutral
+2018-02-26,JPMorgan,Berkshire-Amazon-JPMorgan healthcare venture more than just pricing power - Buffett,Seeking Alpha,AET,1,positive,positive,neutral,0.26969054186,positive,neutral,positive,positive
+2016-05-25,JPMorgan,"Stock Market Uptrend Gains Traction; JPMorgan, Goldman Lead Dow",Investor's Business Daily,DY,1,positive,positive,positive,0.9021082299400001,positive,positive,positive,positive
+2019-11-27,JPMorgan,Vonage +2.7% as JPMorgan sees 25% upside,Seeking Alpha,VG,0,positive,neutral,positive,0.9664601435599999,positive,positive,positive,positive
+2019-04-05,JPMorgan,América Móvil +2.1% as JPMorgan sees end of regulatory 'worst',Seeking Alpha,AMX,0,positive,neutral,positive,0.7533981457600001,positive,neutral,positive,positive
+2012-05-17,JPMorgan,"Zacks' Voice of the People highlights opportunities with Goldman Sachs, JPMorgan Chase, SPDR S&P Dividend (ETF), Apple and Myers Industries - Press Releases",Zacks,MYE,0,neutral,neutral,neutral,0.021001889086,positive,neutral,positive,neutral
+2019-01-28,JPMorgan,JPMorgan: Not A Buying Opportunity,Seeking Alpha,JPM,1,negative,negative,neutral,-0.005464050639999999,negative,negative,negative,negative
+2015-05-08,JPMorgan,"Bank Stock Roundup: Lawsuits, Restructuring Continue; JPMorgan & Wells Fargo in Focus - Analyst Blog",Zacks,BBT,1,negative,negative,neutral,0.001411715186000001,negative,neutral,negative,positive
+2018-04-11,JPMorgan,Higher Trading & Rates to Support JPMorgan (JPM) Q1 Earnings,Zacks,BBT,1,positive,positive,positive,0.94974216014,positive,positive,positive,positive
+2015-07-07,JPMorgan,"The Zacks Analyst Blog Highlights: JPMorgan Chase, Bank of America, U.S. Bancorp and Royal Bank of Scotland Group - Press Releases",Zacks,RBS,0,neutral,neutral,neutral,0.01354841982,neutral,neutral,positive,neutral
+2015-08-24,JPMorgan,"Boeing should rebound despite emerging markets swoon, J.P. Morgan says",Seeking Alpha,SPR,0,positive,neutral,positive,0.91604481802,positive,positive,positive,neutral
+2019-04-12,JPMorgan,JPMorgan +2.4% as Q1 EPS beats by 30 cents,Seeking Alpha,JPM,1,positive,positive,positive,0.9499993837,positive,positive,positive,positive
+2016-11-28,JPMorgan,JPMorgan calls Advance Auto Parts best in class,Seeking Alpha,AAP,0,positive,neutral,neutral,0.424138833986,positive,positive,positive,positive
+2011-01-20,JPMorgan,"JPMorgan, Comerica: Winners & Losers",webmaster,BBT,1,neutral,neutral,neutral,-0.04353501924,neutral,neutral,neutral,neutral
+2012-10-11,JPMorgan,"Stocks to Watch: JPMorgan, Ruby Tuesday, Safeway",TheStreet.Com,ALK,0,neutral,neutral,neutral,0.0008647162459999979,neutral,neutral,positive,neutral
+2018-09-06,JPMorgan,JPMorgan cuts Franklin Resources to underweight on emerging markets,Seeking Alpha,BEN,0,negative,neutral,negative,-0.6342379378,negative,negative,negative,negative
+2019-06-03,JPMorgan,Infinera -3.9% as JPMorgan cuts to Underweight on spending trends,Seeking Alpha,INFN,0,negative,neutral,negative,-0.8412412157200001,negative,negative,negative,negative
+2018-11-28,JPMorgan,JPMorgan steps off Zayo sidelines,Seeking Alpha,ZAYO,0,positive,neutral,neutral,-0.03443911902,neutral,neutral,neutral,neutral
+2014-01-08,JPMorgan,Madoff Suit Costs JPMorgan $2.6B - Analyst Blog,Zacks,HSBC,1,negative,negative,neutral,-0.01276794046,negative,negative,negative,negative
+2019-03-07,JPMorgan,JPMorgan confident on Estee Lauder,Seeking Alpha,EL,0,positive,neutral,neutral,0.285743400086,positive,positive,positive,neutral
+2014-10-23,JPMorgan,"JPMorgan, Credit Suisse & UBS Fined by EU for Rate Rigging - Analyst Blog",Zacks,CS,1,negative,negative,negative,-0.46962609706,negative,neutral,negative,negative
+2019-03-14,JPMorgan,"JPMorgan (JPM) to Open 90 Branches in 2019, Hire New Staff",Zacks,BBT,1,positive,positive,positive,0.64217359483,positive,positive,positive,positive
+2016-08-24,JPMorgan,"Deutsche Bank, UBS, Others Follow JPMorgan, Citi In Digital Currency",Investor's Business Daily,UBS,0,neutral,neutral,neutral,0.00023530066799999985,positive,neutral,positive,positive
+2013-10-10,JPMorgan,JPMorgan Launches Sale of Commodity Biz - Analyst Blog,Zacks,RBS,1,neutral,neutral,neutral,0.0036215910060000004,positive,neutral,positive,positive
+2020-03-12,JPMorgan,J.P. Morgan Asset Management Hires New U.S. Head of Global Tactical Asset Allocation,GuruFocus,JPM,1,neutral,neutral,neutral,0.027385015309999993,positive,neutral,positive,positive
+2015-11-25,JPMorgan,J.P. Morgan now favoring PPG over Valspar in coatings,Seeking Alpha,PPG,0,neutral,neutral,neutral,0.34297106138,positive,neutral,positive,positive
+2018-03-02,JPMorgan,Buy JPMorgan - Cramer's Lightning Round (3/1/18),Seeking Alpha,ALB,1,positive,positive,neutral,0.39341743392000006,positive,positive,positive,positive
+2018-10-31,JPMorgan,JPMorgan in settlement talks with SEC on pre-released ADRs,Seeking Alpha,JPM,1,negative,negative,neutral,0.00306225991,neutral,neutral,neutral,negative
+2013-10-09,JPMorgan,JPMorgan to Minimize Business Risk - Analyst Blog,Zacks,COF,1,neutral,neutral,neutral,0.03724046618,positive,neutral,neutral,neutral
+2014-07-31,JPMorgan,JPMorgan to Pay $650K for Clearing CFTC False-Report Charges - Analyst Blog,Zacks,HBAN,1,negative,negative,neutral,-0.007732937647999998,negative,neutral,negative,negative
+2019-07-17,JPMorgan,JPMorgan Is Undervalued,Seeking Alpha,JPM,1,positive,positive,positive,0.74335298004,positive,positive,positive,positive
+2015-04-13,JPMorgan,Could Q1 Earnings Mark a Fresh Start for JPMorgan (JPM)? - Analyst Blog,Zacks,STI,1,positive,positive,neutral,-0.001624370029999999,positive,positive,positive,positive
+2015-04-27,Goldman Sachs,TrueCar on the move after Goldman Sachs nod,Seeking Alpha,TRUE,0,positive,neutral,neutral,-0.006030804112000004,positive,positive,positive,positive
+2019-09-06,Goldman Sachs,Kellogg +2% after Goldman Sachs bump,Seeking Alpha,K,0,positive,neutral,positive,0.8670411765599999,positive,positive,positive,positive
+2015-12-11,Goldman Sachs,"Teradata -3.3%; Goldman starts at Sell, questions buyout prospects",Seeking Alpha,TDC,0,negative,neutral,neutral,-0.04282877654,negative,negative,negative,negative
+2019-05-17,Goldman Sachs,Goldman Sachs near €2B deal for B&B Hotels - Bloomberg,Seeking Alpha,AXP,1,neutral,neutral,neutral,0.013445666438,positive,positive,positive,positive
+2015-10-02,Goldman Sachs,"Facebook, Netflix Top Goldman Sachs' 2016 Growth List",Investor's Business Daily,REGN,0,positive,neutral,neutral,0.028235082139999996,positive,positive,positive,neutral
+2011-09-20,Goldman Sachs,7 Goldman Sachs Tech Stocks Still Standing,webmaster,NCR,0,positive,neutral,neutral,-0.001958141699999999,neutral,neutral,positive,positive
+2018-07-10,Goldman Sachs,What The Goldman Sachs Indicator Is Telling Us Now,Seeking Alpha,EWJ,0,neutral,neutral,neutral,0.006619111139999998,neutral,neutral,neutral,positive
+2018-07-02,Goldman Sachs,Nielsen Holdings -2% as Goldman cuts to Sell,Seeking Alpha,NLSN,0,negative,neutral,neutral,-0.16280762988000003,negative,negative,negative,negative
+2018-06-21,Goldman Sachs,"Lumentum up, Infinera down as Goldman analyst covers opticals",Seeking Alpha,ADTN,0,neutral,neutral,neutral,-0.025162389301999998,positive,positive,positive,neutral
+2019-04-01,Goldman Sachs,"Astronics, Ichor, JP Morgan, Bank of America and Goldman highlighted as Zacks Bull and Bear of the Day",Zacks,ATRO,0,neutral,neutral,neutral,0.003998125667999999,neutral,neutral,positive,neutral
+2016-05-16,Goldman Sachs,Goldman Sachs 'Less Bearish' On Oil Prices After 80% Rise - Oil Markets Daily,Seeking Alpha,MRD,0,positive,neutral,negative,-0.8926627580400001,positive,positive,positive,positive
+2018-10-17,Goldman Sachs,"Zacks Investment Ideas feature highlights: JP Morgan, Citigroup, Bank of America, Morgan Stanley and Goldman Sachs",Zacks,JPM,0,neutral,neutral,neutral,0.00695651991,neutral,neutral,positive,neutral
+2016-05-23,Goldman Sachs,"Goldman also likes Halliburton, Nabors in the oil services sector",Seeking Alpha,HAL,0,positive,neutral,neutral,0.045197230988000006,positive,neutral,positive,neutral
+2018-02-27,Goldman Sachs,"Goldman pins tower-firm declines on Q4 softness, uncertainty ahead",Seeking Alpha,AMT,0,negative,neutral,negative,-0.89010495232,negative,negative,negative,negative
+2017-11-28,Goldman Sachs,OPEC meeting outcome 'more uncertain than usual' - Goldman Sachs,Seeking Alpha,DIG,0,negative,neutral,negative,-0.5193490014000001,negative,neutral,negative,negative
+2014-10-14,Goldman Sachs,Will Goldman (GS) Post an Earnings Beat this Season? - Analyst Blog,Zacks,BBT,1,neutral,neutral,positive,0.6929642274400001,positive,positive,positive,positive
+2020-03-23,Goldman Sachs,Goldman (GS) CEO Solomon Receives 19.6% Pay Hike in 2019,Zacks,JPM,1,neutral,neutral,neutral,0.44148595100000004,positive,positive,positive,positive
+2013-12-18,Goldman Sachs,Goldman to be Fined by EU? - Analyst Blog,Zacks,BOFI,1,negative,negative,negative,-0.57211751926,negative,neutral,negative,negative
+2011-07-27,Goldman Sachs,Conspiracy Theorists in Goldman's Corner,webmaster,OSTK,1,neutral,neutral,neutral,-0.18593086978,negative,neutral,negative,neutral
+2016-11-18,Goldman Sachs,"Nasdaq Finds Resistance, But Goldman Sachs Rises",Investor's Business Daily,STL,1,positive,positive,neutral,-0.029321870799999983,negative,positive,positive,positive
+2018-08-24,Goldman Sachs,Goldman Offering Marcus to UK Staff Before Bigger Rollout,Zacks,MTB,1,neutral,neutral,neutral,0.05826707255999999,positive,neutral,positive,positive
+2015-03-05,Goldman Sachs,Goldman stays bullish on India,Seeking Alpha,EPI,0,positive,neutral,positive,0.95179960524,positive,positive,positive,positive
+2020-03-05,Goldman Sachs,Goldman Forecasts Waning Demand: Oil ETFs to Lose,Zacks,DBO,0,negative,neutral,negative,-0.7100621063999999,negative,negative,negative,negative
+2019-10-08,Goldman Sachs,"Clovis continues selloff, down 9% after Goldman cuts target",Seeking Alpha,CLVS,0,negative,neutral,negative,-0.9002091968200001,negative,negative,negative,negative
+2019-04-15,Goldman Sachs,"Goldman (GS) Q1 Earnings Beat, Advisory Revenues Improve",Zacks,JPM,1,positive,positive,positive,0.96169430048,positive,positive,positive,positive
+2011-07-26,Goldman Sachs,5 Goldman Post-Earnings Bank Picks,webmaster,EWBC,0,positive,neutral,neutral,0.20504575617999998,positive,positive,positive,positive
+2019-01-30,Goldman Sachs,"Videogame stocks rise as Goldman prefers Take-Two, Zynga in launch",Seeking Alpha,EA,0,positive,neutral,positive,0.73070113392,positive,positive,positive,neutral
+2016-04-12,Goldman Sachs,Goldman adds ArcelorMittal to Conviction Buy list,Seeking Alpha,MT,0,positive,neutral,neutral,0.34862707686,positive,positive,positive,positive
+2019-07-02,Goldman Sachs,CenterPoint gains on Goldman's Conviction,Seeking Alpha,CNP,0,positive,neutral,positive,0.76413566748,positive,positive,positive,neutral
+2019-07-22,Goldman Sachs,"Semis gain on Goldman optimism, earnings ahead",Seeking Alpha,SMH,0,positive,neutral,positive,0.93147861171,positive,positive,positive,positive
+2012-02-09,Goldman Sachs,"Whitney Tilson Updates on Netflix, J.C. Penney, Goldman, Citi; Shorting More St. Joe",GuruFocus,JOE,0,neutral,neutral,neutral,0.02097748786,negative,neutral,negative,negative
+2019-06-30,Goldman Sachs,"Citigroup, Goldman Sachs Lead These 6 Bank Stocks To Buy And Watch",Investor's Business Daily,FITB,1,positive,positive,neutral,0.09270384764,positive,positive,positive,positive
+2017-02-17,Goldman Sachs,Goldman an outlier as analysts praise Arista Networks quarter,Seeking Alpha,ANET,0,positive,neutral,neutral,-0.019589103552000005,positive,positive,positive,positive
+2020-05-30,Goldman Sachs,"A Confused Goldman No Longer Expects S&P To Drop To 2,400 But Sees No Market Upside Either",TalkMarkets,AAPL,0,neutral,neutral,negative,-0.6336566591200001,negative,neutral,negative,negative
+2019-04-22,Goldman Sachs,Goldman raises Crown Castle target in post-earnings recalc,Seeking Alpha,CCI,0,positive,neutral,positive,0.858990785652,positive,positive,positive,positive
+2018-07-19,Goldman Sachs,Discovery +1.6% as Goldman adds to conviction list,Seeking Alpha,DISCA,0,positive,neutral,positive,0.820021822984,positive,positive,positive,neutral
+2016-05-25,Goldman Sachs,"Stock Market Uptrend Gains Traction; JPMorgan, Goldman Lead Dow",Investor's Business Daily,DY,1,positive,positive,positive,0.9021082299400001,positive,positive,positive,positive
+2018-07-16,Goldman Sachs,How Will Goldman Sachs (GS) and Morgan Stanley (MS) Perform After Big Banks Earnings?,Zacks,BLK,1,neutral,neutral,neutral,-0.06424334300000001,positive,neutral,neutral,neutral
+2019-07-22,Goldman Sachs,"Barron's Confirms My FedEx Call, As Goldman Does With Micron, It's Semi Time",Seeking Alpha,FDX,0,positive,neutral,neutral,0.001131222714000001,positive,neutral,positive,neutral
+2018-12-17,Goldman Sachs,"Dow Jones Today: Nike, Goldman Sachs, Johnson & Johnson Fall Sharply",Investor's Business Daily,CNC,1,negative,negative,neutral,-0.03651904498399999,negative,negative,negative,negative
+2019-06-25,BlackRock,BlackRock cuts stake in Genmab,Seeking Alpha,BLK,0,neutral,neutral,neutral,-0.170652409694,negative,negative,negative,negative
+2019-06-14,BlackRock,Bet on BlackRock's Megatrends With These ETFs,Zacks,COPX,0,positive,neutral,neutral,0.176492298468,positive,positive,positive,positive
+2018-10-03,BlackRock,Weekly Review: Senior Loan CEFs - This Blackrock Fund Seems Statistically Undervalued,Seeking Alpha,ACP,0,positive,neutral,positive,0.8059748004519999,positive,neutral,positive,positive
+2019-05-09,BlackRock,BlackRock pulls out of Banca Carige rescue,Seeking Alpha,BLK,1,negative,neutral,neutral,-0.006074909002000002,negative,negative,negative,negative
+2019-05-29,BlackRock,On Open Letter To BlackRock's Larry Fink,Seeking Alpha,BLK,1,neutral,neutral,neutral,0.010714778246000003,negative,neutral,neutral,negative
+2019-01-16,BlackRock,"BlackRock misses by $0.20, misses on revenue",Seeking Alpha,BLK,1,negative,negative,negative,-0.9183939228000001,negative,negative,negative,negative
+2012-04-02,BlackRock,"The Zacks Analyst Blog Highlights: Bank of America, The Bank of New York Mellon, MetLife, BlackRock and Hyatt Hotels - Press Releases",Zacks,BLK,0,neutral,neutral,neutral,0.00794304766,neutral,neutral,positive,neutral
+2019-07-24,BlackRock,BlackRock Kelso Capital (BKCC) Earnings Expected to Grow: Should You Buy?,Zacks,BKCC,0,positive,neutral,positive,0.8007168404599999,positive,positive,positive,positive
+2019-04-12,BlackRock,BlackRock trims CEO Fink's 2018 pay,Seeking Alpha,BLK,1,neutral,neutral,neutral,0.0021265572619999997,negative,neutral,negative,negative
+2016-08-29,BlackRock,BlackRock: Investing In The Biggest Investor,Seeking Alpha,BLK,1,positive,positive,neutral,0.008757667859999999,positive,positive,positive,neutral
+2018-08-02,BlackRock,Suggestions For Blackrock After Discussion With Chairman,Seeking Alpha,BLK,1,neutral,neutral,neutral,-0.005136040334000003,neutral,neutral,neutral,neutral
+2019-10-23,BlackRock,BlackRock - Dividend Growth From The Passive Investing Trend,Seeking Alpha,BLK,1,positive,positive,neutral,0.45025660239999993,positive,positive,positive,positive
+2019-11-20,BlackRock,Should Value Investors Consider BlackRock TCP (TCPC) Now?,Zacks,TCPC,0,positive,neutral,neutral,0.056799092600000003,positive,neutral,positive,positive
+2016-11-07,BlackRock,BlackRock Capital Investment Corporation Reports Ugly Q3-16,Seeking Alpha,BKCC,0,negative,neutral,neutral,0.0028872089439999984,negative,negative,negative,negative
+2016-07-26,BlackRock,BlackRock: Valuation Premium To Peers Will Substantially Widen,Seeking Alpha,BLK,1,positive,positive,positive,0.931192030394,positive,positive,positive,positive
+2015-04-15,BlackRock,BlackRock Inc: Well Positioned To Provide Handsome Returns For Dividend Growth Investors,Seeking Alpha,BLK,1,positive,positive,positive,0.919982542592,positive,positive,positive,positive
+2017-03-08,BlackRock,"BlackRock Capital Investment NII in-line, beats on total investment income",Seeking Alpha,BKCC,0,positive,neutral,positive,0.5968558123200001,positive,positive,positive,positive
+2015-01-15,BlackRock,"BlackRock (BLK) Beats on Q4 Earnings, Sees Strong Inflows - Tale of the Tape",Zacks,BLK,1,positive,positive,positive,0.94240287252,positive,positive,positive,positive
+2014-07-16,BlackRock,Retail Boosts BlackRock Q2,Investor's Business Daily,BLK,1,positive,positive,neutral,0.36939978974,positive,positive,positive,positive
+2011-02-15,BlackRock,BlackRock's Inclusion in S&P Could Yield Short-Term Spike,webmaster,BLK,1,positive,positive,neutral,0.24805948780000003,positive,positive,positive,positive
+2010-11-02,BlackRock,Best in Class: BlackRock,webmaster,BLK,1,positive,positive,positive,0.72420560436,positive,positive,positive,positive
+2019-11-27,BlackRock,Asset Growth Aids BlackRock's Top Line Despite High Costs,Zacks,ARCC,1,positive,positive,positive,0.719945858926,positive,positive,positive,positive
+2015-01-06,BlackRock,Financial Review Of 3 Asset Management Companies: My Favorite Is BlackRock,Seeking Alpha,BEN,1,positive,positive,neutral,0.004453835686,neutral,neutral,positive,positive
+2019-02-05,BlackRock,"BlackRock Capital Investment Corporation - Don't Be Tempted By This Low-Quality, High-Yield BDC",Seeking Alpha,BKCC,0,negative,neutral,neutral,-0.31036158338000003,negative,negative,negative,negative
+2019-01-16,BlackRock,"BlackRock (BLK) CEO, Larry Fink on Q4 2018 Results - Earnings Call Transcript",Seeking Alpha,BLK,1,neutral,neutral,neutral,0.004289036473999999,positive,neutral,neutral,neutral
+2015-01-15,BlackRock,"BlackRock Q4 Earnings Beat on Solid Inflows, Dividend Hiked - Analyst Blog",Zacks,AMP,1,positive,positive,positive,0.95188621362,positive,positive,positive,positive
+2012-01-12,BlackRock,BlackRock to Buy ETF firm Claymore - Analyst Blog,Zacks,BLK,1,neutral,neutral,neutral,0.011226758779999998,positive,positive,positive,positive
+2016-07-14,BlackRock,BlackRock income falls as active money turns passive,Seeking Alpha,BLK,1,negative,negative,neutral,-0.03360977614,negative,negative,negative,negative
+2015-10-14,BlackRock,BlackRock (BLK) Beats Q3 Earnings on Top-Line Growth,Zacks,BLK,1,positive,positive,positive,0.9676946841399999,positive,positive,positive,positive
+2012-10-17,BlackRock,Blackrock's Larry Fink - I Am Very Bullish on US Banks,GuruFocus,BLK,0,positive,neutral,positive,0.890727421008,positive,positive,positive,positive
+2016-09-21,BlackRock,Bloomberg: BlackRock considering bid for TerraForm Power,Seeking Alpha,BAM,1,neutral,neutral,neutral,0.04575106718,positive,positive,positive,positive
+2018-11-01,BlackRock,BlackRock TCP (TCPC) Earnings Expected to Grow: Should You Buy?,Zacks,TCPC,0,positive,neutral,positive,0.8374120640900001,positive,positive,positive,positive
+2019-05-01,BlackRock,BlackRock Kelso Capital (BKCC) Misses Q1 Earnings and Revenue Estimates,Zacks,BKCC,0,negative,neutral,negative,-0.93449998164,negative,negative,negative,negative
+2012-04-26,BlackRock,"The Zacks Analyst Blog Highlights: American International Group, Bank of America, The Bank of New York Mellon, MetLife and BlackRock - Press Releases",Zacks,BLK,0,neutral,neutral,neutral,0.00485118652,neutral,neutral,positive,neutral
+2020-05-11,BlackRock,Fed Will Start Buying Bond ETFs Tuesday; Blackrock To Make Over $15 Million In Fees,TalkMarkets,JNK,1,positive,positive,neutral,0.024665155097999995,positive,positive,positive,positive
+2019-11-20,BlackRock,BlackRock declares $3.30 dividend,Seeking Alpha,BLK,1,neutral,neutral,neutral,0.052441315440000004,positive,positive,positive,positive
+2020-05-12,BlackRock,BlackRock Announces Pricing of Secondary Offering of Common Stock,GuruFocus,BLK,1,neutral,neutral,neutral,0.018310032796000002,positive,positive,neutral,positive
+2019-03-27,BlackRock,Vanguard poised to overtake BlackRock in Q1 U.S. ETF flows,Seeking Alpha,BLK,1,positive,negative,positive,0.9168190243939998,positive,neutral,positive,negative
+2019-07-18,BlackRock,BlackRock Q2 Earnings Preview,Seeking Alpha,BLK,1,neutral,neutral,neutral,0.010585838580000001,positive,positive,neutral,positive
+2019-09-08,BlackRock,BlackRock's Global Industry Leadership And Undervaluation Make It A Buy,Seeking Alpha,BLK,1,positive,positive,positive,0.6337796128400001,positive,positive,positive,positive
+2018-08-31,Vanguard,How To Retire In 2018 With Your Vanguard Account,Seeking Alpha,AVB,0,neutral,neutral,neutral,0.0005986662120000021,neutral,positive,neutral,positive
+2012-10-02,Vanguard,Vanguard To Drop MSCI Benchmarks In Cost-Cutting Move,Investor's Business Daily,MSCI,1,neutral,neutral,negative,-0.7832076702,negative,negative,negative,negative
+2018-04-06,Vanguard,"Zacks Value Investor Highlights: AdvanSix, El Pollo Loco, Caleres, SPDR S&P 600 and Vanguard Small Cap Value",Zacks,LOCO,0,neutral,neutral,neutral,0.005612602942,neutral,neutral,positive,neutral
+2014-08-16,Vanguard,Vanguard Looks Like A Bright Spot For Future.,GuruFocus,AVD,0,positive,neutral,positive,0.77739094604,positive,positive,positive,positive
+2011-01-11,Vanguard,3 Keys to Vanguard's ETF Success,webmaster,BLK,1,positive,positive,positive,0.8483999534600001,positive,positive,positive,positive
+2018-09-04,Vanguard,Vanguard declares monthly distribution on ETF Funds,Seeking Alpha,BLV,0,neutral,neutral,neutral,0.0011455502339999986,positive,positive,neutral,positive
+2011-10-25,Vanguard,TSS Acquires Vanguard's Portfolio - Analyst Blog,Zacks,GPN,0,neutral,neutral,neutral,0.04902561922,positive,neutral,positive,negative
+2016-07-22,Vanguard,"Vanguard, Robos, Diversification, And Kurt Vonnegut's Monkey House",Seeking Alpha,BND,0,neutral,neutral,neutral,0.0017730026539999996,neutral,neutral,neutral,neutral
+2019-05-31,Vanguard,Vanguard declares monthly distribution on ETF funds,Seeking Alpha,BLV,0,neutral,neutral,neutral,0.0011455502339999986,positive,positive,neutral,positive
+2016-08-02,Vanguard,Vanguard Sold Shares in 7 of Top –… Quarterly Transactions,GuruFocus,BAX,0,neutral,neutral,neutral,0.004542274438,negative,neutral,negative,negative
+2013-06-24,Vanguard,Tenet To Buy Vanguard As ObamaCare Approaches,Investor's Business Daily,UHS,0,neutral,neutral,neutral,0.062914180426,positive,negative,negative,negative
+2015-01-23,Vanguard,Vanguard pushes past State Street for #2 ETF spot,Seeking Alpha,BLK,1,positive,positive,neutral,0.0050541315399999995,positive,positive,positive,positive
+2020-02-24,Vanguard,Security Benefit Life Insurance Co Buys Vanguard FTSE Developed Markets,GuruFocus,VEA,0,neutral,neutral,neutral,0.00717438032,positive,neutral,positive,positive
+2020-03-05,Vanguard,Demand Grows For Briggs & Stratton's New Vanguard® Commercial Battery System,GuruFocus,BGG,0,positive,neutral,positive,0.911125555948,positive,positive,positive,positive
+2015-12-21,Vanguard,Vanguard about to get into junk bonds,Seeking Alpha,BND,1,neutral,neutral,neutral,0.0001104848440000002,negative,negative,negative,negative
+2016-12-19,Vanguard,Vanguard declares quarterly distribution on ETF Funds,Seeking Alpha,IVOV,0,neutral,neutral,neutral,0.005105211510000002,positive,positive,neutral,positive
+2018-01-18,Vanguard,Vanguard Has Been Thrown In The Bargain Bin,Seeking Alpha,AVB,0,neutral,neutral,neutral,-0.16633651369400002,negative,negative,negative,negative
+2017-07-18,Vanguard,"Pachira Investments Inc. Buys Vanguard Short-Term Bond, Sells SPDR MidCap Trust Series I",GuruFocus,MDY,0,neutral,neutral,neutral,0.008217358652,neutral,neutral,neutral,neutral
+2020-04-15,Vanguard,ALM Intelligence Names FTI Consulting a Vanguard Leader in Capital Projects & ...,GuruFocus,FCN,0,positive,neutral,neutral,0.042055355913999996,positive,neutral,positive,neutral
+2016-12-22,Vanguard,Vanguard reports first wave of 2016 expense ratio changes,Seeking Alpha,VHT,1,neutral,neutral,neutral,0.0255345602,neutral,neutral,neutral,neutral
+2019-05-09,Vanguard,Vanguard FTSE Europe: EU's Top ETF Carries Geopolitical Risk Come Next Winter,Seeking Alpha,VGK,0,negative,neutral,neutral,-0.23465555561,negative,negative,negative,negative
+2020-04-02,Vanguard,"Stairway Partners, LLC Buys Vanguard FTSEEuropean",GuruFocus,VGK,0,neutral,neutral,neutral,0.007327754687999999,positive,negative,neutral,negative
+2019-06-27,Vanguard,Vanguard joins $1T ETF AUM club,Seeking Alpha,BLK,1,positive,positive,neutral,0.007967402533999999,positive,positive,positive,positive
+2019-09-05,Vanguard,"Since 1970, Vanguard's VFIIX Has Produced Dependable Income",Seeking Alpha,AGG,0,positive,neutral,positive,0.6766149175080001,positive,positive,positive,positive
+2020-06-02,Vanguard,"Alexandria Real Estate Equities, Inc. at the Vanguard of the Life Science Ecosystem's Fight ...",GuruFocus,ARE,0,positive,neutral,neutral,0.005734111458,positive,positive,positive,neutral
+2018-01-22,Vanguard,FREL: A Cheaper Alternative To Vanguard's VNQ?,Seeking Alpha,VNQ,0,neutral,neutral,neutral,0.4079296822,negative,neutral,neutral,neutral
+2016-07-18,Vanguard,"My 80 Stock Portfolio Review: Revealing All Account Types - Taxable, Roth And Other Holdings In Vanguard",Seeking Alpha,ARCC,0,neutral,neutral,neutral,-0.0011503014600000002,neutral,neutral,neutral,positive
+2013-06-24,Vanguard,Hospitals Buck Into ObamaCare Era; Vanguard Soars 68%,Investor's Business Daily,UHS,0,positive,neutral,neutral,0.004920923599999999,positive,positive,positive,positive
+2015-11-15,Vanguard,"Vanguard Raises Stakes in Biogen, Mylan, Merck",GuruFocus,BAX,0,neutral,neutral,neutral,0.09054847523999998,positive,positive,positive,neutral
+2017-07-21,Vanguard,"What Is Vanguard's Take On Global Growth, Active-Passive Debate?",Investor's Business Daily,BND,0,neutral,neutral,neutral,0.00445138255,neutral,neutral,neutral,neutral
+2017-08-17,Vanguard,"Vanguard Sells Medtronic, Cigna in —nd Quarter",GuruFocus,CI,0,neutral,neutral,neutral,0.00837936297,negative,negative,negative,negative
+2019-07-08,Vanguard,"Elwood & Goetz Wealth Advisory Group, LLC Buys Vanguard Growth, Vanguard FTSE Developed Markets",GuruFocus,VEA,0,neutral,neutral,neutral,0.006894113956,positive,negative,positive,positive
+2019-06-19,Vanguard,Vanguard cuts fees on active funds in U.K.,Seeking Alpha,BLK,1,neutral,neutral,neutral,-0.006501248214000001,positive,negative,neutral,positive
+2017-12-18,Vanguard,Dividend Investing Through Vanguard's High Dividend Yield ETF,Seeking Alpha,VIG,0,neutral,neutral,neutral,0.02041725444,positive,positive,positive,positive
+2019-09-22,Vanguard,Follow The Fed Minutes And Purchase Vanguard's BND,Seeking Alpha,AGG,0,positive,neutral,neutral,0.004739367851999999,neutral,neutral,positive,positive
+2019-03-27,Vanguard,Vanguard poised to overtake BlackRock in Q1 U.S. ETF flows,Seeking Alpha,BLK,1,positive,positive,positive,0.9168190243939998,positive,positive,positive,positive
+2019-03-22,Vanguard,Vanguard declares quarterly distribution on ETFs,Seeking Alpha,MGV,0,neutral,neutral,neutral,0.003453235328000001,positive,positive,neutral,positive
+2015-07-21,Vanguard,Vanguard's 5 Best No-Load ETFs And Index Funds To Make Into A Portfolio,Seeking Alpha,BND,0,positive,neutral,neutral,0.026122708940000003,positive,positive,neutral,positive
+2019-04-11,Vanguard,It's Time To Buy Vanguard's Energy ETF,Seeking Alpha,VDE,0,positive,neutral,neutral,0.021061659746,positive,positive,positive,positive
+2019-01-17,Vanguard,4 Stocks in Remembrance of Vanguard Founder John Bogle,Zacks,AEE,0,neutral,neutral,neutral,0.0007168237999999995,neutral,neutral,neutral,neutral
+2013-03-14,Citadel,Citadel to Offload E*TRADE Stake - Analyst Blog,Zacks,EVR,0,neutral,neutral,neutral,-0.001427603296,negative,neutral,neutral,negative
+2018-05-29,Citadel,Helios and Matheson +13.3% on Citadel Securities stake,Seeking Alpha,HMNY,0,positive,neutral,neutral,0.011603523142,positive,positive,positive,positive
+2018-01-12,Citadel,Northern Trust to Acquire Citadel's Technology Platform,Zacks,BBT,1,neutral,neutral,neutral,0.36353031378,positive,neutral,positive,negative
+2014-08-04,Citadel,Hedge Fund Titan Ken Griffin (Citadel) - Unfiltered 25 Minute Interview,GuruFocus,TWC,1,neutral,neutral,neutral,-0.015886192052000002,positive,neutral,neutral,neutral
+2019-08-16,Citadel,Clovis Oncology up 10% as Citadel buys in,Seeking Alpha,CLVS,0,positive,neutral,positive,0.932414284328,positive,positive,positive,positive
+2011-01-05,Citadel,E*Trade Ends Citadel Order Flow Deal,webmaster,AMTD,1,negative,negative,neutral,0.0030616653480000002,negative,negative,negative,negative
+2013-03-19,Citadel,Billionaire Ken Griffin Beefing Up His Buffalo Wild Wings Position,GuruFocus,BWLD,0,positive,neutral,neutral,0.008141940633999997,positive,positive,positive,neutral
+2015-06-18,Citadel,Citadel Investment Group Is A Big Buyer Of Popular,Seeking Alpha,BPOP,0,positive,neutral,neutral,0.007017963862,positive,positive,positive,neutral
+2016-09-01,Citadel,"8 years later, Citadel is a major player in swaps market",Seeking Alpha,SF,1,positive,positive,neutral,0.11754075209999999,positive,positive,positive,positive
+2019-08-18,Citadel,"Goodbye To Gilead As ViiV, Merck Besiege Its HIV Citadel",Seeking Alpha,ALXN,0,negative,neutral,neutral,0.0969191372,negative,negative,negative,negative
+2015-01-12,Citadel,Rentrak signs deal with Citadel Communications,Seeking Alpha,RENT,0,positive,neutral,neutral,0.18857008745999998,positive,positive,neutral,neutral

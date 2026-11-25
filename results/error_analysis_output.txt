@@ -1,0 +1,39 @@
+bert ensemble: 153 errors out of 968 (15.8%)
+errors by agreement level: {'66-74%': 54, '50-65%': 49, '75-99%': 36, '100%': 14}
+error types (gold -> pred): {'neutral -> positive': 63, 'positive -> neutral': 52, 'neutral -> negative': 22, 'negative -> neutral': 11, 'negative -> positive': 4, 'positive -> negative': 1}
+
+most confident errors:
+                                                                                                                                                                             text     label     model      conf agreement
+319                                         Finnish mobile operator DNA will function as a subcontractor to Maingate and will be responsible for telecommunications connections .  positive   neutral  0.992498    50-65%
+328                                                                                                                  Etteplan targets to employ at least 20 people in Borl+ñnge .  positive   neutral  0.991967    66-74%
+849                 According to the Latvian business register , Uponor Latvia closed in red with LVL 99,000 EUR 139,538.17 USD 194,556.48 on turnover of LVL 2.346 mn for 2009 .  negative   neutral  0.991697    66-74%
+168                                                                         The increase in capital stock has been registered in the Finnish Trade Register on 20 November 2006 .  positive   neutral  0.991459    50-65%
+602                                                    Neste Oil extended yesterday 's gains and put on 0.49 pct to 22.72 eur , while utility Fortum shed 1.14 pct to 20.76 eur .   neutral  positive  0.989938    66-74%
+123                                                                  There are companies , which are ready to invest their own funds in this deal such as Rostelecom RTS : RTKM .  positive   neutral  0.989045    66-74%
+269                                                                                           s already good position in the technical building services market in Ostrobothnia .   neutral  positive  0.988748    50-65%
+515                                             Under the contract , Ericsson will more than double the number of radio base stations in the Elisa network over the coming year .   neutral  positive  0.988422    50-65%
+887                                                         The dollar bounced back after hitting another record low against the euro , which reached $ 1.41 for the first time .   neutral  positive  0.986874    66-74%
+304                                                                        The company plans to spend the proceeds from the rights offering for strengthening its balance sheet .   neutral  positive  0.986388    66-74%
+318                                                                  `` The sale of the oxygen measurement business strengthens our goal to focus on our chosen market segments .   neutral  positive  0.984554    50-65%
+698  Mr. Jorma Valkama , Managing Director of Suomen Paikallissanomat Oy , states that Rannikkoseutu complements in an outstanding way the current product range of the company .   neutral  positive  0.984079    50-65%
+
+sentences with no opinion words that the model gets right but the lexicon does not:
+                                                                                                                                                                                                                                text     label
+4                                      Sales in Latin America increased by 42 % to EUR 432mn , and a total of 8.7 mn mobile devices were sold in the area , representing an increase of 32 % from the corresponding period in 2009 .  positive
+13  30 November 2009 - Finnish office furniture maker Martela Oyj HEL : MARAS said today that it will make redundant three people and other nine will be laid off permanently from the company 's office staff and factory workers .  negative
+19                                                                               This new representation extends Comptel 's global presence to a total of 18 countries , serving over 250 customers in over 80 countries worldwide .  positive
+23                                                                                                                                                                                               European traffic grew nearly 30 % .  positive
+26                                                                                                                                                                                          EBIT margin was up from 1.4 % to 5.1 % .  positive
+38                                                                                                                                                               Nokia s U.S. shares were 3.3 percent lower at $ 12.73 by 1750 GMT .  negative
+(150 such sentences)
+
+bert right, Qwen 6-shot wrong: 112; gold->qwen: {'positive -> neutral': 45, 'neutral -> positive': 42, 'negative -> neutral': 20, 'neutral -> negative': 4, 'positive -> negative': 1}
+                                                                                                                                                                                          text     label qwen_6shot
+25                                                         The contracts have been signed to acquire uranium produced at the Sotkamo nickel-zinc mine in eastern Finland owned by Talvivaara .  positive    neutral
+49                                                                           The layoffs were aimed at reaching an annual savings target of 1.5 billion euros $ 2 billion by the end of 2010 .  positive    neutral
+52                                                                                                                         The measures result from weak demand in the shipbuilding industry .  negative    neutral
+59                  Nokia 's share price fell less than one percent to 18.70 euros ( $ 25.41 ) in Helsinki , while Siemens shares fell 1.02 percent to 90.19 euros ( $ 122.57 ) in Frankfurt .  negative    neutral
+72                                                                                                 RIM has revamped the BlackBerry OS UI with the 6.0 version of the mobile operating system .   neutral   positive
+77                      Finnish construction company YIT is reducing the number of start-ups of market-financed residential units in 2007 to about 2,300 from the previously announced 2,700 .  negative    neutral
+84  Outotec is currently delivering a new oil shale processing plant for Eesti Energia in Estonia based on Enefit technology , which has been developed jointly by Eesti Energia and Outotec .   neutral   positive
+97                                                                                                                          `` I 'm happy with the outcome , '' Sneed said after the hearing .  positive    neutral

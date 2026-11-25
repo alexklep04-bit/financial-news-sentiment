@@ -1,0 +1,26 @@
+class distribution in train: {'neutral': 0.594, 'positive': 0.282, 'negative': 0.125}
+majority baseline = 0.5937, random baseline = 0.4473
+twitter: majority = 0.6469, random = 0.4822
+   majority               pb_test    seed=0  acc=0.5940  macroF1=0.2484
+   majority               twitter    seed=0  acc=0.6469  macroF1=0.2619
+   lm_lexicon             pb_test    seed=0  acc=0.5785  macroF1=0.4693
+   lm_lexicon             twitter    seed=0  acc=0.5769  macroF1=0.4389
+   tfidf_lr C=0.3   val macroF1=0.7198
+   tfidf_lr C=1     val macroF1=0.7470
+   tfidf_lr C=3     val macroF1=0.7527
+   tfidf_lr C=10    val macroF1=0.7464
+   tfidf_lr C=30    val macroF1=0.7432
+   -> best C = 3
+   tfidf_lr               pb_test    seed=0  acc=0.7696  macroF1=0.7287
+   tfidf_lr               twitter    seed=0  acc=0.6453  macroF1=0.4794
+   tfidf_lr_regex C=0.3   val macroF1=0.7006
+   tfidf_lr_regex C=1     val macroF1=0.7338
+   tfidf_lr_regex C=3     val macroF1=0.7403
+   tfidf_lr_regex C=10    val macroF1=0.7376
+   tfidf_lr_regex C=30    val macroF1=0.7337
+   -> best C = 3
+   tfidf_lr_regex         pb_test    seed=0  acc=0.7748  macroF1=0.7388
+   tfidf_lr_regex         twitter    seed=0  acc=0.6536  macroF1=0.5014
+   top words for negative: down, fell, decreased, lower, down from, to _money_, decreased to, staff, to profit, had, off, prices
+   top words for neutral: is, will be, _money_ and, _num_ _num_, stake, to the, no, development, be, the finnish, covers, based on
+   top words for positive: up from, rose, up, _money_ up, rose to, increase, signed, leading, awarded, increased by, positive, increased

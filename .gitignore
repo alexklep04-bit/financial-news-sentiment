@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+~$*
+
+# raw downloads and word embeddings: too big for GitHub,
+# re-create them with code/download_data.py and code/train_embeddings.py
+data/*.parquet
+data/*.kv
+data/*.npy
+data/phrasebank_raw/
+data/twitter_sent_*.csv
+data/twitter_sent_dataset_meta.txt
+
+# saved FinBERT weights (420 MB), re-create with code/finetune_bert.py
+results/finbert_seed1/
+
+# personal notes
+NOT_FOR_SUBMISSION_*
+
+# my own copy of the report (contains my student ID)
+report/Experimental_*.docx

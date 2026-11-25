@@ -1,0 +1,95 @@
+vocab size: 7242
+
+glove: 89.8% of the training vocabulary has a pretrained vector; examples of OOV: ['<pad>', '<unk>', '_num_', '_year_', '_money_', '_pct_', 'ruukki', 'seinajoki', 'cargotec', 'intellibis', 'stonesoft', 'citycon', 'steek', 'geosolutions', 'benefon']
+  mlp_glove seed 1: val F1 0.6580 after 23 epochs (4s)
+   mlp_glove              pb_test    seed=1  acc=0.7128  macroF1=0.6142
+   mlp_glove              twitter    seed=1  acc=0.6112  macroF1=0.4806
+  mlp_glove seed 2: val F1 0.6563 after 24 epochs (3s)
+   mlp_glove              pb_test    seed=2  acc=0.7211  macroF1=0.6480
+   mlp_glove              twitter    seed=2  acc=0.5867  macroF1=0.4735
+  mlp_glove seed 3: val F1 0.6078 after 8 epochs (1s)
+   mlp_glove              pb_test    seed=3  acc=0.6798  macroF1=0.5630
+   mlp_glove              twitter    seed=3  acc=0.6028  macroF1=0.4759
+  mlp_glove seed 4: val F1 0.6850 after 25 epochs (2s)
+   mlp_glove              pb_test    seed=4  acc=0.7242  macroF1=0.6495
+   mlp_glove              twitter    seed=4  acc=0.5721  macroF1=0.4596
+  mlp_glove seed 5: val F1 0.6453 after 13 epochs (1s)
+   mlp_glove              pb_test    seed=5  acc=0.6983  macroF1=0.6055
+   mlp_glove              twitter    seed=5  acc=0.5720  macroF1=0.4588
+  cnn_glove seed 1: val F1 0.7520 after 13 epochs (217s)
+   cnn_glove              pb_test    seed=1  acc=0.7975  macroF1=0.7676
+   cnn_glove              twitter    seed=1  acc=0.6113  macroF1=0.5174
+  cnn_glove seed 2: val F1 0.7551 after 7 epochs (134s)
+   cnn_glove              pb_test    seed=2  acc=0.7851  macroF1=0.7458
+   cnn_glove              twitter    seed=2  acc=0.6218  macroF1=0.5235
+  cnn_glove seed 3: val F1 0.7514 after 6 epochs (100s)
+   cnn_glove              pb_test    seed=3  acc=0.7769  macroF1=0.7507
+   cnn_glove              twitter    seed=3  acc=0.5805  macroF1=0.5119
+  cnn_glove seed 4: val F1 0.7494 after 9 epochs (71s)
+   cnn_glove              pb_test    seed=4  acc=0.7810  macroF1=0.7523
+   cnn_glove              twitter    seed=4  acc=0.5754  macroF1=0.5103
+  cnn_glove seed 5: val F1 0.7450 after 11 epochs (97s)
+   cnn_glove              pb_test    seed=5  acc=0.7872  macroF1=0.7558
+   cnn_glove              twitter    seed=5  acc=0.5829  macroF1=0.5029
+  bilstm_glove seed 1: val F1 0.7497 after 17 epochs (49s)
+   bilstm_glove           pb_test    seed=1  acc=0.7562  macroF1=0.7172
+   bilstm_glove           twitter    seed=1  acc=0.5648  macroF1=0.4891
+  bilstm_glove seed 2: val F1 0.7313 after 11 epochs (74s)
+   bilstm_glove           pb_test    seed=2  acc=0.7676  macroF1=0.7222
+   bilstm_glove           twitter    seed=2  acc=0.5738  macroF1=0.4850
+  bilstm_glove seed 3: val F1 0.7286 after 12 epochs (31s)
+   bilstm_glove           pb_test    seed=3  acc=0.7665  macroF1=0.7308
+   bilstm_glove           twitter    seed=3  acc=0.5787  macroF1=0.4861
+  bilstm_glove seed 4: val F1 0.7170 after 6 epochs (17s)
+   bilstm_glove           pb_test    seed=4  acc=0.7603  macroF1=0.7223
+   bilstm_glove           twitter    seed=4  acc=0.5763  macroF1=0.4788
+  bilstm_glove seed 5: val F1 0.7238 after 6 epochs (18s)
+   bilstm_glove           pb_test    seed=5  acc=0.7603  macroF1=0.7244
+   bilstm_glove           twitter    seed=5  acc=0.5677  macroF1=0.4815
+
+fin: 100.0% of the training vocabulary has a pretrained vector; examples of OOV: []
+  mlp_fin seed 1: val F1 0.6481 after 21 epochs (1s)
+   mlp_fin                pb_test    seed=1  acc=0.7035  macroF1=0.5920
+   mlp_fin                twitter    seed=1  acc=0.6754  macroF1=0.5084
+  mlp_fin seed 2: val F1 0.6591 after 28 epochs (1s)
+   mlp_fin                pb_test    seed=2  acc=0.7200  macroF1=0.6202
+   mlp_fin                twitter    seed=2  acc=0.6691  macroF1=0.4933
+  mlp_fin seed 3: val F1 0.6648 after 29 epochs (2s)
+   mlp_fin                pb_test    seed=3  acc=0.7097  macroF1=0.6027
+   mlp_fin                twitter    seed=3  acc=0.6541  macroF1=0.4868
+  mlp_fin seed 4: val F1 0.6273 after 18 epochs (1s)
+   mlp_fin                pb_test    seed=4  acc=0.7138  macroF1=0.5988
+   mlp_fin                twitter    seed=4  acc=0.6713  macroF1=0.5154
+  mlp_fin seed 5: val F1 0.6525 after 20 epochs (1s)
+   mlp_fin                pb_test    seed=5  acc=0.7076  macroF1=0.5899
+   mlp_fin                twitter    seed=5  acc=0.6786  macroF1=0.4872
+  cnn_fin seed 1: val F1 0.7472 after 11 epochs (75s)
+   cnn_fin                pb_test    seed=1  acc=0.7872  macroF1=0.7573
+   cnn_fin                twitter    seed=1  acc=0.6429  macroF1=0.5451
+  cnn_fin seed 2: val F1 0.7421 after 6 epochs (56s)
+   cnn_fin                pb_test    seed=2  acc=0.7645  macroF1=0.7365
+   cnn_fin                twitter    seed=2  acc=0.6365  macroF1=0.5483
+  cnn_fin seed 3: val F1 0.7543 after 6 epochs (85s)
+   cnn_fin                pb_test    seed=3  acc=0.7676  macroF1=0.7416
+   cnn_fin                twitter    seed=3  acc=0.6332  macroF1=0.5458
+  cnn_fin seed 4: val F1 0.7508 after 9 epochs (113s)
+   cnn_fin                pb_test    seed=4  acc=0.7820  macroF1=0.7594
+   cnn_fin                twitter    seed=4  acc=0.6048  macroF1=0.5206
+  cnn_fin seed 5: val F1 0.7542 after 7 epochs (102s)
+   cnn_fin                pb_test    seed=5  acc=0.7727  macroF1=0.7384
+   cnn_fin                twitter    seed=5  acc=0.6291  macroF1=0.5261
+  bilstm_fin seed 1: val F1 0.7287 after 7 epochs (72s)
+   bilstm_fin             pb_test    seed=1  acc=0.7572  macroF1=0.7182
+   bilstm_fin             twitter    seed=1  acc=0.6161  macroF1=0.5197
+  bilstm_fin seed 2: val F1 0.7197 after 7 epochs (51s)
+   bilstm_fin             pb_test    seed=2  acc=0.7655  macroF1=0.7282
+   bilstm_fin             twitter    seed=2  acc=0.6028  macroF1=0.5072
+  bilstm_fin seed 3: val F1 0.7152 after 11 epochs (91s)
+   bilstm_fin             pb_test    seed=3  acc=0.7552  macroF1=0.7137
+   bilstm_fin             twitter    seed=3  acc=0.5802  macroF1=0.4906
+  bilstm_fin seed 4: val F1 0.7217 after 9 epochs (66s)
+   bilstm_fin             pb_test    seed=4  acc=0.7593  macroF1=0.7207
+   bilstm_fin             twitter    seed=4  acc=0.5811  macroF1=0.4885
+  bilstm_fin seed 5: val F1 0.7195 after 7 epochs (58s)
+   bilstm_fin             pb_test    seed=5  acc=0.7459  macroF1=0.7016
+   bilstm_fin             twitter    seed=5  acc=0.5686  macroF1=0.4811

@@ -1,0 +1,14 @@
+sentences: 804558  tokens: 7491471
+fastText trained in 313s, vocab = 42986
+bullish    fin:   ['bearish', 'bullishly', 'bullishness', 'cautious', 'bullitt', 'bearishness']
+           glove: ['bearish', 'cautious', 'upbeat', 'optimistic', 'sentiment', 'pessimistic']
+downgrade  fin:   ['downgrades', 'downgrading', 'upgrade', 'downgraded', 'underweight', 'lowered']
+           glove: ['downgrades', 'downgrading', 'downgraded', 'moody', 'fitch', 'rating']
+profit     fin:   ['profits', 'profiting', 'easily', 'unadjusted', 'adjusted', 'swings']
+           glove: ['profits', 'earnings', 'net', 'revenue', 'sales', 'pretax']
+layoffs    fin:   ['layoff', 'playoffs', 'playoff', 'payoffs', 'shutoffs', 'curtailment']
+           glove: ['cutbacks', 'closings', 'downsizing', 'buyouts', 'closures', 'bankruptcies']
+goldman    fin:   ['sachs', 'citi', "goldman's", 'stanley', 'ubs', 'jpmorgan']
+           glove: ['sachs', 'merrill', 'lynch', 'citigroup', 'lehman', 'ubs']
+dividend   fin:   ['superdividend', 'dividends', 'divide', 'divides', 'divided', 'divi']
+           glove: ['dividends', 'payout', 'earnings', 'buyback', 'profit', 'shareholders']

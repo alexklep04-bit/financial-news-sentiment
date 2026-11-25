@@ -1,0 +1,110 @@
+{
+ "author": "[Name Surname]",
+ "date": "2026",
+ "majority": "59.4",
+ "random": "44.7",
+ "main_takeaways": [
+  [
+   "83.5",
+   "macro-F1 of fine-tuned BERT, the best model on PhraseBank"
+  ],
+  [
+   "80.2",
+   "Qwen2.5-1.5B with only 6 examples in the prompt, no training at all"
+  ],
+  [
+   "75.4",
+   "best model without a transformer (CNN on GloVe)"
+  ]
+ ],
+ "notes_main": "Here are the main results. Fine-tuned BERT is the best with 83.5 macro-F1. The surprise for me was the prompted LLM: with just six solved examples in the prompt, the small Qwen 1.5B reaches 80.2, without updating a single weight. Zero-shot it was much weaker, and, interestingly, the bigger 3B model did not profit from the examples at all. The lexicon is the weakest real method, its accuracy is even below always saying neutral, because many sentences only report numbers and contain no opinion words. The CNN is the best of the classic neural networks, the BiLSTM does not help on these short sentences.",
+ "domain_pairs": [
+  [
+   "PhraseBank test (in-domain)",
+   "BERT",
+   "83.5",
+   "FinBERT",
+   "81.7",
+   "No gain. With 3,000 labelled sentences from the same domain, general BERT is even slightly better."
+  ],
+  [
+   "Tweets about the 5 firms",
+   "BERT",
+   "52.7",
+   "FinBERT",
+   "64.7",
+   "Finance pre-training pays off as soon as the type of text changes."
+  ]
+ ],
+ "embed_note": "Same pattern for word embeddings: our FinText is as good as GloVe on PhraseBank (CNN 74.7 vs 75.4), but better on tweets (CNN 53.0 vs 51.3, FFNN 50.3 vs 44.7).",
+ "notes_domain": "The second question was whether training on financial text helps. On PhraseBank itself the answer is no: FinBERT is a bit worse than BERT and my own finance embeddings are as good as GloVe. But on tweets the picture flips. FinBERT is twelve points better than BERT on tweets about the five firms. So domain pre-training does not matter much when you have labelled data from the same domain, but it matters a lot when the text changes.",
+ "agreement_text": "When all annotators agreed, BERT is right 97% of the time.\nWhen only 50-65% agreed, it is right 62% of the time, close to always saying neutral (54%).\n115 of BERT's 153 errors are positive vs neutral. Only 5 mix up positive and negative.",
+ "notes_agreement": "PhraseBank tells us how many annotators agreed on each sentence. All models are almost perfect on the clear sentences and close to the baseline on the ones where people disagreed. And the models almost never confuse positive and negative. The hard question is whether something like a new contract is important enough to be positive.",
+ "shift_text": "Most trained models lose 15-25 points on tweets.\n27% of tweet words never appear in the PhraseBank training data (6% for its test set).\nBest on tweets: Qwen 1.5B 6-shot (72.2) and FinBERT (67.0).",
+ "notes_shift": "Then I tested the same models on financial tweets, without training on them. Everything drops, because the language is different: a quarter of the words in the tweets never appear in PhraseBank, for example downgrade or beats. The models that hold up best are FinBERT and the prompted LLM, which learned market language during pre-training.",
+ "case_text": "3,333 headlines left after the regex filters (7,802 matched).\nAbout two thirds are neutral for every firm, net sentiment is slightly positive.\nSome dips match real events: Goldman Sachs 2010 (SEC fraud charges), JPMorgan 2013 ($13B settlement).",
+ "notes_case": "Now the case study. I found the headlines about the five firms with regular expressions and removed the obvious noise like portfolio lists and analyst calls. Then I ran FinBERT over them. Most headlines are neutral, and there are a few dips that match real events. But when I read the headlines behind the numbers, many of them were not about the firm at all.",
+ "about_pct": "42%",
+ "about_examples": [
+  [
+   "Kellogg +2% after Goldman Sachs bump",
+   "Goldman is only the analyst"
+  ],
+  [
+   "It's Time To Buy Vanguard's Energy ETF",
+   "a Vanguard fund, not the company"
+  ],
+  [
+   "Tenet To Buy Vanguard As ObamaCare Approaches",
+   "Vanguard Health, a hospital chain"
+  ]
+ ],
+ "firm_table": [
+  [
+   "FinBERT",
+   "61.1",
+   "49.8"
+  ],
+  [
+   "Qwen 1.5B, sentence prompt",
+   "67.1",
+   "39.4"
+  ],
+  [
+   "Qwen 1.5B, firm-aware prompt",
+   "73.8",
+   "47.9"
+  ],
+  [
+   "Qwen 3B, sentence prompt",
+   "73.8",
+   "44.6"
+  ],
+  [
+   "Qwen 3B, firm-aware prompt",
+   "67.4",
+   "49.5"
+  ]
+ ],
+ "firm_text": "The firm-aware prompt helps, but even Qwen 3B still calls 66% of the headlines that are not about the firm positive or negative. The hard part is deciding whether the news concerns the firm at all.",
+ "notes_firm": "So I annotated 171 headlines by hand. Only 42 percent of them are really news about the firm. I also tried a prompt that names the firm and explains that analyst calls are neutral for it. It helps, but the small models still do not follow this instruction well. A real system would need a separate step that first decides whether the headline is about the firm.",
+ "conclusions": [
+  [
+   "RQ1",
+   "Fine-tuned BERT is best on PhraseBank (83.5 macro-F1), but a 1.5B LLM with 6 examples comes close (80.2)."
+  ],
+  [
+   "RQ2",
+   "Finance pre-training (FinText, FinBERT) gives nothing in-domain, but a lot on tweets."
+  ],
+  [
+   "RQ3",
+   "Most models drop by 15-25 points on tweets; the 6-shot LLM and FinBERT hold up best."
+  ],
+  [
+   "RQ4",
+   "Sentence sentiment is not firm sentiment: only 42% of firm headlines are about the firm."
+  ]
+ ],
+ "notes_conclusions": "To sum up. Fine-tuning still wins on the benchmark, but few-shot prompting of a small LLM is surprisingly close and transfers better. Domain pre-training is useful when the text changes. And if you want sentiment about a specific bank, you first have to solve the question of whether the news is about that bank."
+}

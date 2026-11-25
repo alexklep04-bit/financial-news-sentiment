@@ -1,0 +1,151 @@
+=== seed 1 start 09:36:36
+W1124 09:36:39.368000 10493 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+device: mps
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 30506.82it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: yiyanghkust/finbert-pretrain
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  finbert seed 1 epoch 1: loss 0.6246  val F1 0.8322  (85s)
+  finbert seed 1 epoch 2: loss 0.2893  val F1 0.8397  (91s)
+  finbert seed 1 epoch 3: loss 0.1320  val F1 0.8328  (126s)
+  finbert seed 1 epoch 4: loss 0.0606  val F1 0.8331  (135s)
+   finbert                pb_test    seed=1  acc=0.8450  macroF1=0.8243
+   finbert                twitter    seed=1  acc=0.7496  macroF1=0.6333
+   finbert                firm_heads seed=1  acc=0.8461  macroF1=0.3055
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.07it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  3.07it/s]
+=== seed 1 done 09:45:28, cooling 90s
+=== seed 2 start 09:46:58
+W1124 09:47:01.150000 11265 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+device: mps
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 54599.76it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: yiyanghkust/finbert-pretrain
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  finbert seed 2 epoch 1: loss 0.6221  val F1 0.8275  (85s)
+  finbert seed 2 epoch 2: loss 0.2880  val F1 0.8360  (127s)
+  finbert seed 2 epoch 3: loss 0.1429  val F1 0.8439  (107s)
+  finbert seed 2 epoch 4: loss 0.0687  val F1 0.8443  (104s)
+   finbert                pb_test    seed=2  acc=0.8388  macroF1=0.8229
+   finbert                twitter    seed=2  acc=0.7376  macroF1=0.6666
+   finbert                firm_heads seed=2  acc=0.7195  macroF1=0.2790
+=== seed 2 done 09:55:17, cooling 90s
+=== seed 3 start 09:56:47
+W1124 09:56:49.857000 11765 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+device: mps
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 56772.31it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: yiyanghkust/finbert-pretrain
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  finbert seed 3 epoch 1: loss 0.6398  val F1 0.8384  (76s)
+  finbert seed 3 epoch 2: loss 0.2710  val F1 0.8372  (112s)
+  finbert seed 3 epoch 3: loss 0.1235  val F1 0.8372  (112s)
+  finbert seed 3 epoch 4: loss 0.0644  val F1 0.8393  (109s)
+   finbert                pb_test    seed=3  acc=0.8378  macroF1=0.8258
+   finbert                twitter    seed=3  acc=0.7199  macroF1=0.6686
+   finbert                firm_heads seed=3  acc=0.6043  macroF1=0.2511
+=== seed 3 done 10:04:56, cooling 90s
+=== seed 4 start 10:06:26
+W1124 10:06:28.505000 12240 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+device: mps
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 55618.48it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: yiyanghkust/finbert-pretrain
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  finbert seed 4 epoch 1: loss 0.6431  val F1 0.8417  (77s)
+  finbert seed 4 epoch 2: loss 0.2814  val F1 0.8288  (119s)
+  finbert seed 4 epoch 3: loss 0.1363  val F1 0.8320  (114s)
+  finbert seed 4 epoch 4: loss 0.0602  val F1 0.8314  (109s)
+   finbert                pb_test    seed=4  acc=0.8285  macroF1=0.7960
+   finbert                twitter    seed=4  acc=0.7351  macroF1=0.6575
+   finbert                firm_heads seed=4  acc=0.7066  macroF1=0.2760
+=== seed 4 done 10:14:47, cooling 90s
+=== seed 5 start 10:16:17
+W1124 10:16:19.335000 12716 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+device: mps
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 58647.17it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: yiyanghkust/finbert-pretrain
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.decoder.weight             | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+  finbert seed 5 epoch 1: loss 0.6634  val F1 0.8189  (77s)
+  finbert seed 5 epoch 2: loss 0.2876  val F1 0.8344  (123s)
+  finbert seed 5 epoch 3: loss 0.1407  val F1 0.8371  (116s)
+  finbert seed 5 epoch 4: loss 0.0643  val F1 0.8361  (112s)
+   finbert                pb_test    seed=5  acc=0.8275  macroF1=0.8154
+   finbert                twitter    seed=5  acc=0.7187  macroF1=0.6680
+   finbert                firm_heads seed=5  acc=0.6160  macroF1=0.2541
+=== seed 5 done 10:24:45, cooling 90s

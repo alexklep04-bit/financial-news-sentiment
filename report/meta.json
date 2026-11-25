@@ -1,0 +1,21 @@
+{
+ "university": "[University name]",
+ "faculty": "[Faculty name]",
+ "author": "[Name Surname]",
+ "title": "Financial News Sentiment Analysis: From Word Counts to Large Language Models",
+ "subtitle": "with a case study on JPMorgan, Goldman Sachs, BlackRock, Vanguard and Citadel",
+ "kind": "Mini research project (experimental)",
+ "course": "Course: Language Technologies",
+ "lecturer": "Lecturer: Jurgita Kapočiūtė-Dzikienė",
+ "place": "[City], 2026",
+ "abstract": [
+  "Financial text is hard for general sentiment tools: domain words have special meanings, bad news is often just a number going down, and a headline that mentions a bank is often not about the bank. We compare the model families covered in the Language Technologies course on the same financial sentiment task: a finance lexicon, TF-IDF with logistic regression, GloVe and our own finance embeddings with an FFNN, a CNN and a BiLSTM, fine-tuned BERT and FinBERT, and Qwen2.5 LLMs prompted with zero or six examples. All models are evaluated on the Financial PhraseBank with five runs and 95% confidence intervals, and on financial tweets that none of them was trained on.",
+  "Fine-tuned BERT is the best model on PhraseBank (83.5 macro-F1), but Qwen2.5-1.5B prompted with six examples comes within four points without any training and is the most robust model on tweets. Domain-specific pre-training does not help on PhraseBank, but FinBERT beats BERT by up to 12 points on tweets. A case study on JPMorgan, Goldman Sachs, BlackRock, Vanguard and Citadel shows that only 42% of the headlines that mention these firms are actually about them, so sentence-level sentiment is a poor proxy for sentiment towards a firm."
+ ],
+ "keywords": "financial sentiment analysis, Financial PhraseBank, word embeddings, FinBERT, large language models, prompting",
+ "parts": [
+  "report_part1.md",
+  "report_part2.md",
+  "report_appendix.md"
+ ]
+}
