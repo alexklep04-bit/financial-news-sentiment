@@ -35,7 +35,7 @@ To reach the goal, the following tasks were set:
 
 **Supervised models.** The Financial PhraseBank of Malo et al. [@malo] became the standard benchmark for financial sentence sentiment. Early approaches used n-gram features with linear classifiers, later work used word embeddings [@mikolov, @pennington, @bojanowski] with convolutional [@kim] and recurrent [@hochreiter] networks.
 
-**Transformers.** BERT [@devlin] is an encoder built on the Transformer architecture [@vaswani] and pre-trained on general English text. Araci [@araci] further pre-trained it on financial news and reported 86% accuracy on PhraseBank. Yang et al. [@yang] and Huang et al. [@huang] pre-trained BERT from scratch on 4.9 billion tokens of corporate filings, earnings calls and analyst reports with a finance-specific vocabulary; this model is called FinBERT in this paper.
+**Transformers.** BERT [@devlin] is an encoder built on the Transformer architecture [@vaswani] and pre-trained on general English text. Araci [@araci] further pre-trained it on financial news and reported 86% accuracy on PhraseBank. Yang et al. [@yang] and Huang et al. [@huang] pre-trained BERT from scratch on 4.9 billion tokens of corporate filings, earnings calls and analyst reports with a finance-specific vocabulary. In this paper this model is called FinBERT.
 
 **Large language models.** GPT-3 [@brown] made few-shot prompting popular: the task and a few solved examples are written in the prompt, and no weights are updated. Zhang et al. [@zhang] found LLMs competitive zero-shot on simple sentiment tasks but behind small fine-tuned models on harder ones. Fine-tuning a whole LLM is expensive, so parameter-efficient methods such as Low-Rank Adaptation (LoRA) [@hu] train only small low-rank matrices. Qwen2.5 [@qwen] is a recent family of open LLMs that is available in sizes small enough for a laptop.
 
@@ -43,7 +43,7 @@ To reach the goal, the following tasks were set:
 
 ## 2.2 Methods analysis
 
-This section describes the five model families compared in this work, from the simplest to the most complex; their exact settings are given in Section 3.3.
+This section describes the five model families compared in this work, from the simplest to the most complex. Their exact settings are given in Section 3.3.
 
 **Baselines and lexicon.** The majority baseline always predicts the most frequent class, *neutral*. The random baseline is the expected accuracy of guessing with the class proportions p, as defined in the evaluation lecture:
 
@@ -57,11 +57,11 @@ The Loughran-McDonald (LM) lexicon [@lm] counts the positive and negative financ
 
 where tf(t, d) is the number of times t occurs in d, N is the number of training sentences and df(t) the number of sentences that contain t. Common words such as *the* get a low weight, while terms that are typical of a sentence but rare in the collection get a high one. A logistic regression (LR) with balanced class weights then learns one weight per term and class.
 
-**Word embeddings and neural networks.** Word embeddings represent each word as a dense vector, so that words used in similar contexts get similar vectors. We compare general GloVe vectors [@pennington], trained on Wikipedia and Gigaword, with FinText, our own fastText skip-gram model [@bojanowski] trained on financial headlines. fastText also uses character n-grams, so it can build vectors even for words it has never seen. Three networks use these vectors: a feed-forward neural network (FFNN) on the averaged vectors of a sentence; a convolutional neural network (CNN) in the style of Kim [@kim], whose filters of width 2-5 work as learned n-gram detectors followed by max-pooling; and a bidirectional long short-term memory network (BiLSTM) [@hochreiter], which reads the sentence word by word in both directions and keeps a memory controlled by gates.
+**Word embeddings and neural networks.** Word embeddings represent each word as a dense vector, so that words used in similar contexts get similar vectors. We compare general GloVe vectors [@pennington], trained on Wikipedia and Gigaword, with FinText, our own fastText skip-gram model [@bojanowski] trained on financial headlines. fastText also uses character n-grams, so it can build vectors even for words it has never seen. Three networks use these vectors. The feed-forward neural network (FFNN) works on the average of the word vectors of a sentence. The convolutional neural network (CNN) follows Kim [@kim]: its filters of width 2-5 act as learned n-gram detectors, followed by max-pooling. The bidirectional long short-term memory network (BiLSTM) [@hochreiter] reads the sentence word by word in both directions and keeps a memory that is controlled by gates.
 
 **Fine-tuned transformers.** BERT [@devlin] uses self-attention, so the representation of each word depends on all other words of the sentence. For classification, a linear layer is put on top of the special classification token (CLS) and the whole model is fine-tuned on the labelled data. FinBERT [@yang, @huang] has the same architecture but was pre-trained on financial text with its own vocabulary. We deliberately did not use the popular ProsusAI/finbert checkpoint, because it was already fine-tuned on PhraseBank and has very likely seen our test sentences.
 
-**Prompted LLMs.** Qwen2.5-Instruct [@qwen] is a decoder-only model that predicts the next token; it is not trained at all in this work. The *zero-shot* prompt contains the task description from the PhraseBank annotation guideline (how would the news affect the stock price from an investor's point of view) and the sentence, and the *6-shot* prompt adds two solved training examples of each class (Appendix B). Instead of generating free text, we compare the probabilities of *positive*, *negative* and *neutral* as the next token, so the answer is always a valid label.
+**Prompted LLMs.** Qwen2.5-Instruct [@qwen] is a decoder-only model that predicts the next token. It is not trained at all in this work. The *zero-shot* prompt contains the task description from the PhraseBank annotation guideline (how would the news affect the stock price from an investor's point of view) and the sentence, and the *6-shot* prompt adds two solved training examples of each class (Appendix B). Instead of generating free text, we compare the probabilities of *positive*, *negative* and *neutral* as the next token, so the answer is always a valid label.
 
 # 3 DATA AND EXPERIMENTAL SETUP
 
@@ -71,17 +71,17 @@ where tf(t, d) is the number of times t occurs in d, N is the number of training
 
 **Twitter Financial News** (Hugging Face *zeroshot/twitter-financial-news-sentiment*) contains 11,931 tweets labelled bearish, bullish or neutral, which we map to negative, positive and neutral after removing URLs and the "$" of cashtags. No model is trained on tweets: the 2,340 tweets of the official validation split are an out-of-domain test set, together with the 125 tweets from both splits that mention one of the five firms.
 
-**Financial headlines.** About 1.8 million unlabelled headlines from 2009-2020 (Benzinga, Seeking Alpha, Zacks and other sites; Kaggle "Massive Stock News Analysis DB"), 807 thousand after removing duplicates. All of them were used to train the FinText embeddings, and the ones about the five firms for the case study.
+**Financial headlines.** About 1.8 million unlabelled headlines from 2009-2020 (Benzinga, Seeking Alpha, Zacks and other sites, from the Kaggle dataset "Massive Stock News Analysis DB"), 807 thousand after removing duplicates. All of them were used to train the FinText embeddings, and the ones about the five firms for the case study.
 
 [[TAB:data]]
 
 ## 3.2 Regular expressions
 
-Regular expressions (Appendix A, {tab:regex}) are used in three places. (1) **Normalisation for the bag-of-words and embedding models.** More than half of the training sentences contain numbers, and 1,194 of the 1,637 different number tokens occur only once, so a classifier cannot learn anything from them. Percentages, money amounts, years, quarters and other numbers are therefore replaced with the tokens _pct_, _money_, _year_, _quarter_ and _num_, so that "rose to EUR 13.1 mn" and "rose to EUR 2.7 mn" share the same features. (2) **Finding the firms** by their names, CEOs and tickers; a negative look-behind and look-ahead exclude namesakes such as "American Vanguard" or "Vanguard Health". (3) **Filtering headlines that are not about the firm:** portfolio lists ("XYZ Advisors Buys iShares ..., Vanguard ..."), analyst calls where the bank is only the broker ("cut to Sell at Goldman"), conference names and fund products.
+Regular expressions (Appendix A, {tab:regex}) are used in three places. (1) **Normalisation for the bag-of-words and embedding models.** More than half of the training sentences contain numbers, and 1,194 of the 1,637 different number tokens occur only once, so a classifier cannot learn anything from them. Percentages, money amounts, years, quarters and other numbers are therefore replaced with the tokens _pct_, _money_, _year_, _quarter_ and _num_, so that "rose to EUR 13.1 mn" and "rose to EUR 2.7 mn" share the same features. (2) **Finding the firms** by their names, CEOs and tickers. A negative look-behind and look-ahead exclude namesakes such as "American Vanguard" or "Vanguard Health". (3) **Filtering headlines that are not about the firm:** portfolio lists ("XYZ Advisors Buys iShares ..., Vanguard ..."), analyst calls where the bank is only the broker ("cut to Sell at Goldman"), conference names and fund products.
 
 ## 3.3 Model configuration
 
-{tab:hyper} lists the main settings of all models. The FinText embeddings have 100 dimensions, like the GloVe vectors, and were trained on 7.5 million tokens with a window of 5, 10 negative samples and 8 epochs. The only hyperparameter tuned by a search is C of the logistic regression; for the neural networks and BERT we used standard values from the literature and selected the training length on the validation set. Caching the part of the LLM prompt that is the same for all sentences (key-value (KV) cache) made 6-shot prompting about ten times faster with identical predictions. All experiments ran on a laptop with an Apple M3 chip, 16 GB of memory and its integrated graphics processing unit (GPU).
+{tab:hyper} lists the main settings of all models. The FinText embeddings have 100 dimensions, like the GloVe vectors, and were trained on 7.5 million tokens with a window of 5, 10 negative samples and 8 epochs. The only hyperparameter tuned by a search is C of the logistic regression. For the neural networks and BERT we used standard values from the literature and only selected the training length on the validation set. Caching the part of the LLM prompt that is the same for all sentences (key-value (KV) cache) made 6-shot prompting about ten times faster with identical predictions. All experiments ran on a laptop with an Apple M3 chip, 16 GB of memory and its integrated graphics processing unit (GPU).
 
 [[TAB:hyper]]
 
@@ -97,7 +97,7 @@ Because the classes are imbalanced, the main metric is macro-averaged F1 ({eq:ma
 
 [[EQ:macro|Macro-F1 = (1 / |C|) · Σ_{c ∈ C} F1_{c}]]
 
-Accuracy is reported as well; it is only meaningful if it beats the majority (59.4%) and random (44.7%, see {eq:random}) baselines. Every model that depends on random initialisation is trained 5 times with different seeds (for 6-shot prompting, with 5 different sets of demonstrations), and we report the mean with a 95% confidence interval (CI) computed with {eq:ci}:
+Accuracy is reported as well, but it is only meaningful if it beats the majority (59.4%) and random (44.7%, see {eq:random}) baselines. Every model that depends on random initialisation is trained 5 times with different seeds (for 6-shot prompting, with 5 different sets of demonstrations), and we report the mean with a 95% confidence interval (CI) computed with {eq:ci}:
 
 [[EQ:ci|CI = x̄ ± 1.96 · s / √n,     n = 5]]
 
@@ -107,9 +107,9 @@ where x̄ and s are the mean and the sample standard deviation of the 5 scores. 
 
 ## 4.1 Comparison of model families (RQ1)
 
-{tab:main} gives the results on the PhraseBank test set. All trained models beat both baselines. The lexicon's accuracy (57.9%) is even below the majority baseline, although its macro-F1 is almost twice as high: it predicts *neutral* for 613 of the 968 test sentences, and 31% of these are in fact positive or negative, typically sentences that only report numbers, such as "Turnover rose to EUR21m from EUR17m". TF-IDF learns exactly such phrases (its strongest features include *up from*, *rose to* and, after normalisation, *_money_ up*) and reaches 73.9 macro-F1; the regex normalisation adds one point.
+{tab:main} gives the results on the PhraseBank test set. All trained models beat both baselines. The lexicon's accuracy (57.9%) is even below the majority baseline, although its macro-F1 is almost twice as high: it predicts *neutral* for 613 of the 968 test sentences, and 31% of these are in fact positive or negative, typically sentences that only report numbers, such as "Turnover rose to EUR21m from EUR17m". TF-IDF learns exactly such phrases (its strongest features include *up from*, *rose to* and, after normalisation, *_money_ up*) and reaches 73.9 macro-F1. The regex normalisation adds one point.
 
-Averaging word vectors works poorly (FFNN, 60-62). Usually only one or two of the 23 words in a sentence decide the label, and the average dilutes them; besides, in GloVe the nearest neighbour of *rose* is *fell* (cosine similarity 0.88). The CNN is the best model without a transformer (75.4 ± 0.7) and beats the BiLSTM (72.3 ± 0.4), because the decisive cues are short local phrases. Fine-tuned transformers are another 6-8 points better (BERT 83.5 ± 0.3, FinBERT 81.7 ± 1.1), with the largest gain on the small negative class (F1 84.8 for BERT against 73.8 for the CNN).
+Averaging word vectors works poorly (FFNN, 60-62). Usually only one or two of the 23 words in a sentence decide the label, and the average dilutes them. Besides, in GloVe the nearest neighbour of *rose* is *fell* (cosine similarity 0.88). The CNN is the best model without a transformer (75.4 ± 0.7) and beats the BiLSTM (72.3 ± 0.4), because the decisive cues are short local phrases. Fine-tuned transformers are another 6-8 points better (BERT 83.5 ± 0.3, FinBERT 81.7 ± 1.1), with the largest gain on the small negative class (F1 84.8 for BERT against 73.8 for the CNN).
 
 [[TAB:main]]
 
@@ -129,15 +129,15 @@ Applied to tweets ({tab:tweets}), most models lose 15-25 points: BERT drops from
 
 [[TAB:tweets]]
 
-Here domain-specific pre-training pays off. FinText beats GloVe with all three networks (FFNN +5.6, CNN +1.7, BiLSTM +0.6 points), and FinBERT beats BERT by six points (67.0 vs 61.1) and by twelve on the tweets about the five firms (64.7 vs 52.7). The labelled data are the same, so the gain can only come from pre-training on US market language. The best transfer, however, comes from the 6-shot LLM: Qwen2.5-1.5B with PhraseBank demonstrations reaches 72.2 ± 1.6 on the tweets and 70.5 ± 2.3 on the tweets about the firms.
+Here domain-specific pre-training helps. FinText beats GloVe with all three networks (FFNN +5.6, CNN +1.7, BiLSTM +0.6 points), and FinBERT beats BERT by six points (67.0 vs 61.1) and by twelve on the tweets about the five firms (64.7 vs 52.7). The labelled data are the same, so the gain can only come from pre-training on US market language. But the best transfer comes from the 6-shot LLM: Qwen2.5-1.5B with PhraseBank demonstrations reaches 72.2 ± 1.6 on the tweets and 70.5 ± 2.3 on the tweets about the firms.
 
 ## 4.5 Prompted large language models
 
 Without demonstrations the size of the LLM matters ({tab:main}): Qwen2.5-0.5B answers *neutral* to almost everything (26.6 macro-F1), the 1.5B model reaches 63.4 and the 3B model 73.9, as much as TF-IDF. {fig:confusion} shows why the zero-shot 1.5B model is weak: it finds 99% of the negative and 96% of the positive sentences, but it also calls 53% of the neutral ones positive. For the model any rise in sales or new contract is good news, while the annotators often label such sentences neutral.
 
-[[FIG:confusion|figures/fig_confusion.png|5.6|Confusion matrices on the PhraseBank test set (rows: gold label, columns: prediction; normalised per row, summed over all runs)]]
+[[FIG:confusion|figures/fig_confusion.png|5.6|Confusion matrices on the PhraseBank test set (rows: gold label, columns: prediction, normalised per row and summed over all runs)]]
 
-Six demonstrations fix most of this. Qwen2.5-1.5B reaches 80.2 ± 0.5, less than four points below BERT, after seeing 6 labelled sentences instead of 3,096 and without any training, and the share of neutral sentences it calls positive falls to 10%. Surprisingly, the 3B model does not profit at all (70.3 ± 3.3, below its zero-shot 73.9) and still calls about a third of the neutral sentences positive (31% zero-shot, 35% with examples), as if it kept its own idea of good news; with only one prompt we cannot say how general this is. PhraseBank has been public since 2014 and may be part of Qwen's pre-training data, but the weak zero-shot results suggest that the labels were not memorised.
+Six demonstrations fix most of this. Qwen2.5-1.5B reaches 80.2 ± 0.5, less than four points below BERT, after seeing 6 labelled sentences instead of 3,096 and without any training, and the share of neutral sentences it calls positive falls to 10%. Surprisingly, the 3B model does not profit at all (70.3 ± 3.3, below its zero-shot 73.9) and still calls about a third of the neutral sentences positive (31% zero-shot, 35% with examples), as if it kept its own idea of good news. With only one prompt we cannot say how general this is. PhraseBank has been public since 2014 and may be part of Qwen's pre-training data, but the weak zero-shot results suggest that the labels were not memorised.
 
 # 5 CASE STUDY: NEWS ABOUT FIVE FINANCIAL FIRMS (RQ4)
 
@@ -166,14 +166,14 @@ Against the sentence labels the prompted LLMs beat FinBERT ({tab:manual}), but a
 1. Fine-tuned BERT is the best model on the Financial PhraseBank test set with 83.5 ± 0.3 macro-F1, followed by FinBERT (81.7 ± 1.1) and by Qwen2.5-1.5B with six examples in the prompt (80.2 ± 0.5). The best model without a transformer, a CNN on GloVe vectors, reaches 75.4 ± 0.7, TF-IDF 73.9 and the finance lexicon 46.9.
 2. Regular expressions improved TF-IDF from 72.9 to 73.9 macro-F1 by normalising numbers, and removed 4,469 of the 7,802 headlines that mention the five firms but are mostly not news about them.
 3. Domain-specific pre-training gave no gain on PhraseBank, but on tweets FinBERT was 6 points better than BERT on the validation split and 12 points better on the tweets about the five firms, and FinText beat GloVe with all three networks.
-4. Most trained models lose 15-25 points of macro-F1 on tweets; the 6-shot LLM (72.2) and FinBERT (67.0) are the most robust.
+4. Most trained models lose 15-25 points of macro-F1 on tweets. The 6-shot LLM (72.2) and FinBERT (67.0) hold up best.
 5. Six demonstrations raised Qwen2.5-1.5B from 63.4 to 80.2 macro-F1, but did not help Qwen2.5-3B (73.9 zero-shot, 70.3 with six examples).
 6. Only 42% of the 171 manually checked firm headlines are really about the firm, and all models reach about 50 macro-F1 or less against the firm-level labels.
 
 ## 6.2 Conclusions
 
 1. The ranking of the model families mostly follows the order of the course: each step from word counts to n-grams, learned representations and pre-trained transformers brought a clear gain. The exception is the averaged-embedding FFNN, which shows that how word vectors are combined matters as much as the vectors themselves (RQ1).
-2. Few-shot prompting of a small open LLM is a serious alternative to fine-tuning when labelled data are scarce, but the gain from demonstrations is not guaranteed, and prompting is much slower: Qwen2.5-3B needed almost three minutes for the 968 test sentences, the fine-tuned BERT a few seconds (RQ1).
+2. Few-shot prompting of a small open LLM is a real alternative to fine-tuning when there is little labelled data, but the gain from demonstrations is not guaranteed, and prompting is much slower: Qwen2.5-3B needed almost three minutes for the 968 test sentences, the fine-tuned BERT a few seconds (RQ1).
 3. Whether domain-specific pre-training helps depends on the test data. It does not help when labelled data of the same kind are available, but it helps a lot when the type of text changes, which is the realistic case for a news feed (RQ2, RQ3).
 4. Sentence-level sentiment is a poor measure of the sentiment towards a firm, because most headlines that mention a firm are not about it. Measuring firm-level sentiment needs a step that first decides whether a headline concerns the firm (RQ4).
 
